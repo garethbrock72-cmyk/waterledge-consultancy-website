@@ -1,9 +1,9 @@
-import Link from 'next/link';
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-6 py-16 bg-gradient-to-b from-white to-slate-100">
-      <div className="max-w-4xl w-full text-center space-y-6">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-slate-100 text-slate-900 py-16 px-4 sm:px-6">
+      <div className="max-w-4xl mx-auto text-center space-y-6 mb-16">
         <span className="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-blue-700 bg-blue-100 rounded-full">
           Occupational Hygiene & Exposure Control
         </span>
@@ -20,24 +20,19 @@ export default function Home() {
           Expert workplace assessments, exposure monitoring, and bespoke compliance tooling designed to protect workers and streamline reporting.
         </p>
 
-        <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="https://your-render-app-url.onrender.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto px-8 py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition duration-200 text-center"
+            className="w-full sm:w-auto px-8 py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition duration-200"
           >
             Launch COSHH Report Generator &rarr;
           </a>
-
-          <a
-            href="#contact"
-            className="w-full sm:w-auto px-8 py-3.5 bg-white hover:bg-slate-50 text-slate-700 font-semibold rounded-lg border border-slate-300 shadow-sm transition duration-200 text-center"
-          >
-            Get in Touch
-          </a>
         </div>
       </div>
+
+      <ContactForm />
     </main>
   );
 }
