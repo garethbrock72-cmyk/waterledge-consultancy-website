@@ -5,19 +5,21 @@ export default function Home() {
     <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col justify-between">
       {/* Navigation */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 relative flex items-center justify-center">
+          {/* Centered Brand Title */}
           <div className="flex items-center space-x-2">
             <span className="w-3 h-3 rounded-full bg-blue-600"></span>
-            <span className="font-bold text-slate-900 tracking-tight text-lg">
+            <span className="font-bold text-slate-900 tracking-tight text-lg sm:text-xl">
               Waterledge Consultancy
             </span>
           </div>
-          <nav className="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+
+          {/* Desktop Nav Links (Anchored to Right) */}
+          <nav className="hidden md:flex absolute right-4 sm:right-6 items-center space-x-6 text-sm font-medium text-slate-600">
             <a href="#services" className="hover:text-blue-600 transition">Services</a>
             <a href="#tools" className="hover:text-blue-600 transition">Digital Tools</a>
-            <a href="#about" className="hover:text-blue-600 transition">About</a>
-            <a href="#contact" className="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-md text-xs font-semibold transition">
-              Contact Us
+            <a href="#contact" className="px-3.5 py-1.5 bg-slate-900 hover:bg-slate-800 text-white rounded-md text-xs font-semibold transition">
+              Contact
             </a>
           </nav>
         </div>
