@@ -26,8 +26,9 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative pt-20 pb-16 md:pt-28 md:pb-24 px-4 sm:px-6 bg-gradient-to-b from-white via-slate-50 to-slate-100">
         <div className="max-w-4xl mx-auto text-center space-y-6">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold tracking-wide uppercase">
-            Occupational Hygiene & Exposure Control
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-semibold tracking-wide uppercase">
+            <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+            Practice Launching Early 2027 &bull; Digital Tools Live
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
@@ -35,7 +36,7 @@ export default function Home() {
           </h1>
 
           <p className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Specialist consultancy offering expert workplace exposure assessments, statutory LEV testing, and bespoke digital compliance tools to protect workforces.
+            Specialist occupational hygiene assessments, statutory LEV compliance, and exposure monitoring. Comprehensive field consultancy launching early 2027, with bespoke digital tools available now.
           </p>
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -51,7 +52,7 @@ export default function Home() {
               href="#contact"
               className="w-full sm:w-auto px-7 py-3.5 bg-white hover:bg-slate-50 text-slate-700 font-semibold rounded-lg border border-slate-300 shadow-sm transition"
             >
-              Request a Consultation
+              Enquire for 2027 Engagements
             </a>
           </div>
         </div>
@@ -64,6 +65,11 @@ export default function Home() {
           <p className="mt-3 text-slate-600 text-base">
             Delivering rigorous occupational hygiene evaluations aligned with HSE guidance and British Standards.
           </p>
+        </div>
+
+        {/* Optional: subtle status banner */}
+        <div className="mb-10 p-4 rounded-xl bg-slate-100 border border-slate-200 text-center text-sm text-slate-700 max-w-xl mx-auto">
+          <strong>Advance Scheduling:</strong> Currently accepting early enquiries and planning consultations for Q1 2027 workplace assessments.
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

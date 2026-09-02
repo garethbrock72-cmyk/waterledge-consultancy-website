@@ -44,7 +44,7 @@ export default function ContactForm() {
       <div className="text-center mb-8">
         <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Get in Touch</h2>
         <p className="mt-2 text-slate-600">
-          Discuss workplace air monitoring, LEV testing, or occupational exposure assessments.
+          Discuss early 2027 project availability, workplace air monitoring requirements, or digital compliance solutions.
         </p>
       </div>
 
