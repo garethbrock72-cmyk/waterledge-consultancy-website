@@ -154,17 +154,19 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-slate-200 bg-white py-12 px-4 sm:px-6">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-slate-500">
+        <div className="max-w-6xl mx-auto flex flex-col items-center justify-center gap-6 text-sm text-slate-500 text-center">
           <div>
-            <p className="font-semibold text-slate-800">Waterledge Consultancy</p>
-            <p className="mt-1">Occupational Hygiene & Exposure Control</p>
+            <p className="font-semibold text-slate-800 text-base">Waterledge Consultancy</p>
+            <p className="mt-1 text-slate-600">Occupational Hygiene & Exposure Control</p>
           </div>
-          <div className="flex items-center gap-6">
+          
+          <div className="flex flex-wrap items-center justify-center gap-6 text-sm font-medium">
             <a href="#services" className="hover:text-blue-600 transition">Services</a>
-            <a href="#tools" className="hover:text-blue-600 transition">Tools</a>
+            <a href="#tools" className="hover:text-blue-600 transition">Digital Tools</a>
             <a href="#contact" className="hover:text-blue-600 transition">Contact</a>
           </div>
-          <p className="text-xs">
+
+          <p className="text-xs text-slate-400">
             &copy; {new Date().getFullYear()} Waterledge Consultancy. All rights reserved.
           </p>
         </div>
