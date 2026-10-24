@@ -182,7 +182,7 @@ export default function Home() {
                 Certificate of Competence in Control
               </h3>
               <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                Specialist qualification covering the assessment, specification, and testing of Local Exhaust Ventilation (LEV) and effective application of the hierarchy of controls.
+                Specialist qualification covering performance evaluation and testing of Local Exhaust Ventilation (LEV) systems alongside application of the wider hierarchy of controls requirement.
               </p>
             </div>
 
