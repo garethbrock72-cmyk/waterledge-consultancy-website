@@ -29,7 +29,7 @@ export default function Home() {
           {/* Desktop Nav Links */}
           <nav className="hidden md:flex absolute right-4 sm:right-6 items-center space-x-6 text-sm font-medium text-slate-300">
             <a href="#services" className="hover:text-sky-400 transition">Services</a>
-            <a href="#tools" className="hover:text-sky-400 transition">Digital Tools</a>
+            <a href="#about" className="hover:text-sky-400 transition">Qualifications</a>
             <a 
               href="#contact" 
               className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-lg border border-slate-700 text-xs font-semibold tracking-wide transition"
@@ -46,7 +46,7 @@ export default function Home() {
           {/* Amber Notice Badge */}
           <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold tracking-wider uppercase">
             <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-            Practice Launching Early 2027 &bull; Digital Tools Live
+            Practice Launching Early 2027 &bull; Client Scheduling Open
           </div>
 
           <h1 className="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
@@ -63,18 +63,16 @@ export default function Home() {
 
           <div className="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="https://coshh.waterledgeconsultancy.co.uk"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact"
               className="w-full sm:w-auto px-8 py-3.5 bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold rounded-lg shadow-[0_0_20px_rgba(56,189,248,0.3)] transition"
             >
-              Launch COSHH Generator &rarr;
+              Enquire for 2027 Engagements &rarr;
             </a>
             <a
-              href="#contact"
+              href="#services"
               className="w-full sm:w-auto px-8 py-3.5 bg-slate-900 hover:bg-slate-800 text-white font-semibold rounded-lg border border-slate-700 shadow-sm transition"
             >
-              Enquire for 2027 Engagements
+              Explore Core Services
             </a>
           </div>
         </div>
@@ -133,39 +131,72 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Tool Spotlight */}
-      <section id="tools" className="relative z-10 py-16 px-4 sm:px-6 max-w-6xl mx-auto w-full">
-        <div className="rounded-2xl bg-linear-to-r from-slate-900 via-slate-900 to-sky-950/40 border border-slate-800 p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
-          <div className="space-y-4 max-w-xl">
-            <span className="text-sky-400 font-semibold text-xs tracking-wider uppercase">Live Web Application</span>
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
-              COSHH Report Generator
-            </h2>
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              Automated reporting platform streamlines the generation of standardized COSHH assessments with built-in chemical limit libraries and export capabilities.
-            </p>
-            <ul className="space-y-2 text-sm text-slate-300">
-              <li className="flex items-center gap-2">
-                <span className="text-sky-400 font-bold">&#10003;</span> Automated EH40 WEL parameter lookups
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-sky-400 font-bold">&#10003;</span> Rapid structured Word report generation
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-sky-400 font-bold">&#10003;</span> Standardized control recommendation workflows
-              </li>
-            </ul>
+      {/* Principal Consultant & Qualifications Section */}
+      <section id="about" className="relative z-10 py-16 px-4 sm:px-6 max-w-6xl mx-auto w-full">
+        <div className="rounded-2xl bg-linear-to-r from-slate-900 via-slate-900 to-sky-950/40 border border-slate-800 p-8 sm:p-12 shadow-2xl space-y-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-slate-800 pb-8">
+            <div className="space-y-3 max-w-2xl">
+              <span className="text-sky-400 font-bold text-xs tracking-widest uppercase">
+                Professional Accreditation & Leadership
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
+                Gareth Brock &mdash; Principal Occupational Hygienist
+              </h2>
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                Combining over 20 years of operational Health, Safety, and Environmental (HS&amp;E) leadership with specialist occupational hygiene consultancy. Every survey and exposure control strategy is underpinned by recognized academic and professional qualifications through the British Occupational Hygiene Society (BOHS).
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3.5 py-1.5 rounded-md bg-sky-950/90 border border-sky-700/60 text-sky-300 font-bold text-xs tracking-wide">
+                MSc Occ. Hyg.
+              </span>
+              <span className="px-3.5 py-1.5 rounded-md bg-sky-950/90 border border-sky-700/60 text-sky-300 font-bold text-xs tracking-wide">
+                CertOH
+              </span>
+              <span className="px-3.5 py-1.5 rounded-md bg-sky-950/90 border border-sky-700/60 text-sky-300 font-bold text-xs tracking-wide">
+                CoC (Control)
+              </span>
+            </div>
           </div>
 
-          <div>
-            <a
-              href="https://coshh.waterledgeconsultancy.co.uk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold rounded-lg shadow-[0_0_20px_rgba(56,189,248,0.25)] transition duration-200 text-center"
-            >
-              Launch Generator &rarr;
-            </a>
+          {/* Credential Pillars */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="p-6 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-2">
+              <div className="text-sky-400 font-extrabold text-lg tracking-tight">
+                CertOH
+              </div>
+              <h3 className="text-white font-semibold text-sm">
+                Certificate of Operational Competence
+              </h3>
+              <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                Professional accreditation in comprehensive occupational hygiene practice, workplace hazard evaluation, and risk management.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-2">
+              <div className="text-sky-400 font-extrabold text-lg tracking-tight">
+                CoC (Control)
+              </div>
+              <h3 className="text-white font-semibold text-sm">
+                Certificate of Competence in Control
+              </h3>
+              <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                Specialist qualification covering the assessment, specification, and testing of Local Exhaust Ventilation (LEV) and engineering controls.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-2">
+              <div className="text-sky-400 font-extrabold text-lg tracking-tight">
+                MSc Occupational Hygiene
+              </div>
+              <h3 className="text-white font-semibold text-sm">
+                BOHS-Approved Postgraduate Degree
+              </h3>
+              <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                Advanced scientific training in inhalation toxicology, aerosol physics, physical agents, and statistical exposure assessment.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -180,12 +211,12 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex flex-col items-center justify-center gap-6 text-sm text-slate-400 text-center">
           <div>
             <p className="font-extrabold text-white text-xl tracking-tight">Waterledge Consultancy</p>
-            <p className="mt-1 text-slate-400 text-xs sm:text-sm">Occupational Hygiene & Exposure Control</p>
+            <p className="mt-1 text-slate-400 text-xs sm:text-sm">Occupational Hygiene &amp; Exposure Control</p>
           </div>
           
           <div className="flex flex-wrap items-center justify-center gap-6 text-xs sm:text-sm font-medium text-slate-300">
             <a href="#services" className="hover:text-sky-400 transition">Services</a>
-            <a href="#tools" className="hover:text-sky-400 transition">Digital Tools</a>
+            <a href="#about" className="hover:text-sky-400 transition">Qualifications</a>
             <a href="#contact" className="hover:text-sky-400 transition">Contact</a>
           </div>
 
