@@ -8,22 +8,21 @@ export const metadata: Metadata = {
     template: "%s | Waterledge Consultancy",
   },
   description:
-    "Specialist occupational hygiene consultancy providing workplace air monitoring, statutory LEV thorough examination, and digital COSHH reporting tools across the UK.",
+    "Specialist occupational hygiene consultancy providing workplace health risk assessment, monitoring and practical solutions to achieve compliance with applicable legislation.",
   keywords: [
     "Occupational Hygiene",
-    "Workplace Air Monitoring",
-    "LEV Testing",
-    "HSG258",
+    "Workplace Exposure Monitoring",
+    "LEV Testing",    
     "COSHH Assessment",
     "BS EN 689",
     "Workplace Exposure Limits",
-    "Noise Assessment",
+    "Noise and Vibration Assessment",
   ],
   authors: [{ name: "Waterledge Consultancy" }],
   openGraph: {
     title: "Waterledge Consultancy | Occupational Hygiene & Exposure Control",
     description:
-      "Expert exposure monitoring, LEV testing, and digital compliance tooling. Launching early 2027.",
+      "Specialising in workplace health risk assessment, exposure monitoring, LEV testing, and solutions driven compliance. Launching early 2027.",
     url: "https://waterledgeconsultancy.co.uk",
     siteName: "Waterledge Consultancy",
     locale: "en_GB",
@@ -41,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Waterledge Consultancy | Occupational Hygiene & Exposure Control",
     description:
-      "Workplace air monitoring, LEV testing, and automated COSHH reporting tools.",
+      "Workplace air, noise and vibration monitoring, LEV testing, and health risk reduction solutions.",
     images: ["/og-image.png"],
   },
   robots: {
