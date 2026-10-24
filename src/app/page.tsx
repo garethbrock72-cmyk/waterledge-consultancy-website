@@ -41,7 +41,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative z-10 pt-20 pb-16 md:pt-28 md:pb-24 px-4 sm:px-6 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-slate-950 to-slate-950">
+      <section className="relative z-10 pt-20 pb-16 md:pt-28 md:pb-24 px-4 sm:px-6 bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-slate-900 via-slate-950 to-slate-950">
         <div className="max-w-4xl mx-auto text-center space-y-6">
           {/* Amber Notice Badge */}
           <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold tracking-wider uppercase">
@@ -135,7 +135,7 @@ export default function Home() {
 
       {/* Featured Tool Spotlight */}
       <section id="tools" className="relative z-10 py-16 px-4 sm:px-6 max-w-6xl mx-auto w-full">
-        <div className="rounded-2xl bg-gradient-to-r from-slate-900 via-slate-900 to-sky-950/40 border border-slate-800 p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
+        <div className="rounded-2xl bg-linear-to-r from-slate-900 via-slate-900 to-sky-950/40 border border-slate-800 p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
           <div className="space-y-4 max-w-xl">
             <span className="text-sky-400 font-semibold text-xs tracking-wider uppercase">Live Web Application</span>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
