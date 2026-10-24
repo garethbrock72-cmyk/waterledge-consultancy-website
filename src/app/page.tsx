@@ -140,10 +140,10 @@ export default function Home() {
                 Professional Accreditation & Leadership
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
-                Gareth Brock &mdash; Principal Occupational Hygienist
+                Gareth Brock &mdash; Certified Occupational Hygienist
               </h2>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                Combining over 20 years of operational Health, Safety, and Environmental (HS&amp;E) leadership with specialist occupational hygiene consultancy. Every survey and exposure control strategy is underpinned by recognized academic and professional qualifications through the British Occupational Hygiene Society (BOHS).
+                Combining over 20 years of operational Health, Safety, and Environmental (HS&amp;E) experience with specialist occupational hygiene consultancy. Every survey and exposure control strategy is underpinned by recognized academic and professional qualifications.
               </p>
             </div>
 
@@ -182,7 +182,7 @@ export default function Home() {
                 Certificate of Competence in Control
               </h3>
               <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                Specialist qualification covering the assessment, specification, and testing of Local Exhaust Ventilation (LEV) and engineering controls.
+                Specialist qualification covering the assessment, specification, and testing of Local Exhaust Ventilation (LEV) and effective application of the hierarchy of controls.
               </p>
             </div>
 
