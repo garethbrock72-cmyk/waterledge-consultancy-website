@@ -54,11 +54,11 @@ export default function Home() {
           </h1>
 
           <p className="text-lg sm:text-xl text-sky-400 font-medium max-w-2xl mx-auto leading-relaxed">
-            Specialist occupational hygiene assessments, statutory LEV compliance, and automated compliance tooling.
+            Specialist occupational hygiene assessments and exposure control strategies.
           </p>
 
           <p className="text-sm sm:text-base text-slate-400 max-w-xl mx-auto leading-relaxed">
-            Delivering rigorous exposure evaluations aligned with HSE guidance and British Standards. Client project scheduling now open for early 2027 commencement.
+            Delivering workplace exposure evaluations aligned with HSE guidance, British Standards and International Standards. Client project scheduling now open for early 2027 commencement.
           </p>
 
           <div className="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -97,7 +97,7 @@ export default function Home() {
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">Workplace Air Monitoring</h3>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Personal and static air sampling for respirable dusts, RCS, hazardous vapours, and welding fumes compliant with BS EN 689 and EH40 Workplace Exposure Limits (WELs).
+              Personal and static air sampling for a wide range of substances in accordance with BS EN 689 and EH40 Workplace Exposure Limits (WELs).
             </p>
           </div>
 
@@ -105,9 +105,9 @@ export default function Home() {
             <div className="w-10 h-10 rounded-lg bg-sky-950/80 border border-sky-800 text-sky-400 flex items-center justify-center font-bold mb-5">
               02
             </div>
-            <h3 className="text-xl font-semibold text-white mb-2">LEV Thorough Examination & Testing</h3>
+            <h3 className="text-xl font-semibold text-white mb-2">LEV Assessments</h3>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Statutory 14-month Local Exhaust Ventilation (LEV) inspections, hood velocity checks, static pressure measurements, and duct flow assessments complying with HSG258.
+              Performance evaluation of Local Exhaust Ventilation (LEV) systems and where feasible, Thorough Examination and Test (TExT) assessment as set out in HSG258.
             </p>
           </div>
 
@@ -117,7 +117,7 @@ export default function Home() {
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">Noise & Vibration Surveys</h3>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Workplace noise risk assessments, octave band frequency analysis for hearing protection attenuation, and Hand-Arm Vibration (HAVS) exposure profiling.
+              Workplace noise risk assessments, octave band frequency analysis for hearing protection attenuation, and Hand-Arm/Whole Body Vibration (HAVS) exposure profiling.
             </p>
           </div>
 
@@ -142,7 +142,7 @@ export default function Home() {
               COSHH Report Generator
             </h2>
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              Our automated reporting platform streamlines the generation of standardized COSHH assessments with built-in chemical limit libraries and export capabilities.
+              Automated reporting platform streamlines the generation of standardized COSHH assessments with built-in chemical limit libraries and export capabilities.
             </p>
             <ul className="space-y-2 text-sm text-slate-300">
               <li className="flex items-center gap-2">
