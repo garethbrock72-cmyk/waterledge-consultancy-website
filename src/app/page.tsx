@@ -58,7 +58,7 @@ export default function Home() {
           </p>
 
           <p className="text-sm sm:text-base text-slate-400 max-w-xl mx-auto leading-relaxed">
-            Delivering workplace exposure evaluations aligned with HSE guidance, British Standards and International Standards. Client project scheduling now open for early 2027 commencement.
+            Delivering workplace exposure evaluations aligned with HSE guidance, British and International Standards. Client project scheduling now open for early 2027 commencement.
           </p>
 
           <div className="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
