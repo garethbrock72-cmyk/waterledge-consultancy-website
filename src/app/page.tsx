@@ -2,37 +2,40 @@ import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col justify-between selection:bg-sky-500 selection:text-white relative">
-      {/* Background Decorative Grid Lines */}
+    <div className="min-h-screen bg-[#0c0d0e] text-stone-200 flex flex-col justify-between selection:bg-stone-200 selection:text-stone-900 font-sans antialiased relative">
+      
+      {/* Subtle Atmospheric Top Vignette */}
       <div 
-        className="fixed inset-0 pointer-events-none opacity-20 z-0"
+        className="fixed inset-0 pointer-events-none opacity-40 z-0"
         style={{
-          backgroundImage: `
-            linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px)
-          `,
-          backgroundSize: '40px 40px'
+          background: 'radial-gradient(ellipse 80% 50% at 50% -20%, rgba(212, 197, 169, 0.08), transparent 70%)'
         }}
       />
 
       {/* Navigation */}
-      <header className="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 h-20 relative flex items-center justify-center">
-          {/* Centered Brand Title with Increased Scale */}
-          <div className="flex items-center space-x-3">
-            <span className="w-3 h-3 rounded-full bg-sky-400 shadow-[0_0_12px_rgba(56,189,248,0.8)]"></span>
-            <span className="font-extrabold text-white tracking-tight text-2xl sm:text-3xl">
-              Waterledge Consultancy
+      <header className="sticky top-0 z-50 bg-[#0c0d0e]/90 backdrop-blur-md border-b border-stone-800/80">
+        <div className="max-w-6xl mx-auto px-6 h-24 flex items-center justify-between">
+          {/* Brand Wordmark */}
+          <div className="flex flex-col">
+            <span className="font-serif text-xl sm:text-2xl font-light tracking-[0.08em] text-stone-100 uppercase">
+              Waterledge
+            </span>
+            <span className="text-[10px] tracking-[0.3em] uppercase text-stone-400 font-medium">
+              Consultancy
             </span>
           </div>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden md:flex absolute right-4 sm:right-6 items-center space-x-6 text-sm font-medium text-slate-300">
-            <a href="#services" className="hover:text-sky-400 transition">Services</a>
-            <a href="#about" className="hover:text-sky-400 transition">Qualifications</a>
+          <nav className="hidden md:flex items-center space-x-10 text-[11px] font-medium tracking-[0.22em] uppercase text-stone-400">
+            <a href="#services" className="hover:text-stone-100 transition duration-200">
+              Services
+            </a>
+            <a href="#about" className="hover:text-stone-100 transition duration-200">
+              Qualifications
+            </a>
             <a 
               href="#contact" 
-              className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-lg border border-slate-700 text-xs font-semibold tracking-wide transition"
+              className="px-5 py-2.5 bg-transparent hover:bg-stone-100 hover:text-stone-950 text-stone-200 rounded-none border border-stone-700 text-[11px] font-medium tracking-[0.25em] transition duration-200 uppercase"
             >
               Contact
             </a>
@@ -41,160 +44,212 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative z-10 pt-20 pb-16 md:pt-28 md:pb-24 px-4 sm:px-6 bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-slate-900 via-slate-950 to-slate-950">
-        <div className="max-w-4xl mx-auto text-center space-y-6">
-          {/* Amber Notice Badge */}
-          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold tracking-wider uppercase">
-            <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-            Practice Launching Early 2027 &bull; Client Scheduling Open
+      <section className="relative z-10 pt-28 pb-20 md:pt-36 md:pb-32 px-6">
+        <div className="max-w-4xl mx-auto text-center space-y-8">
+          
+          {/* Heritage-style Notice Badge */}
+          <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-stone-800 bg-stone-900/60 text-stone-300 text-[11px] font-medium tracking-[0.25em] uppercase">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#d4af37]"></span>
+            Practice Launching Early 2027 &bull; Scheduling Open
           </div>
 
-          <h1 className="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
-            Safeguarding Health in the Workplace
+          {/* Editorial Display Heading */}
+          <h1 className="text-4xl sm:text-6xl md:text-7xl font-serif font-light text-stone-100 tracking-tight leading-[1.12]">
+            Safeguarding Health <br className="hidden sm:inline" />
+            in the Modern Workplace
           </h1>
 
-          <p className="text-lg sm:text-xl text-sky-400 font-medium max-w-2xl mx-auto leading-relaxed">
-            Specialist occupational hygiene assessments and exposure control strategies.
+          {/* Editorial Sub-copy */}
+          <p className="text-lg sm:text-xl text-stone-300 font-serif italic max-w-2xl mx-auto leading-relaxed font-light">
+            Specialist occupational hygiene assessments and exposure control engineering.
           </p>
 
-          <p className="text-sm sm:text-base text-slate-400 max-w-xl mx-auto leading-relaxed">
-            Delivering workplace exposure evaluations aligned with HSE guidance, British and International Standards. Client project scheduling now open for early 2027 commencement.
+          <p className="text-sm sm:text-base text-stone-400 max-w-xl mx-auto leading-relaxed font-light tracking-wide">
+            Delivering rigorous workplace exposure evaluations aligned with HSE guidance and British &amp; European Standards. Formal project commissions currently scheduling for 2027.
           </p>
 
+          {/* Minimal Action Buttons */}
           <div className="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="#contact"
-              className="w-full sm:w-auto px-8 py-3.5 bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold rounded-lg shadow-[0_0_20px_rgba(56,189,248,0.3)] transition"
+              className="w-full sm:w-auto px-9 py-4 bg-stone-100 hover:bg-white text-stone-950 font-medium text-xs uppercase tracking-[0.22em] transition duration-200"
             >
-              Enquire for 2027 Engagements &rarr;
+              Enquire for 2027 &rarr;
             </a>
             <a
               href="#services"
-              className="w-full sm:w-auto px-8 py-3.5 bg-slate-900 hover:bg-slate-800 text-white font-semibold rounded-lg border border-slate-700 shadow-sm transition"
+              className="w-full sm:w-auto px-9 py-4 bg-transparent hover:bg-stone-900/60 text-stone-300 hover:text-white border border-stone-800 hover:border-stone-600 font-medium text-xs uppercase tracking-[0.22em] transition duration-200"
             >
-              Explore Core Services
+              Explore Services
             </a>
           </div>
         </div>
       </section>
 
+      {/* Decorative Hairline Rule */}
+      <div className="max-w-6xl mx-auto w-full px-6">
+        <div className="h-px bg-stone-800/80 w-full" />
+      </div>
+
       {/* Services Grid */}
-      <section id="services" className="relative z-10 py-20 px-4 sm:px-6 max-w-6xl mx-auto w-full">
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="text-sky-400 text-xs font-bold uppercase tracking-widest">Field Consultancy</span>
-          <h2 className="text-3xl font-bold text-white tracking-tight mt-2">Core Consultancy Services</h2>
-          <p className="mt-3 text-slate-400 text-base">
-            Structured exposure evaluations aligned with British and European occupational hygiene standards.
+      <section id="services" className="relative z-10 py-28 px-6 max-w-6xl mx-auto w-full">
+        <div className="max-w-2xl mb-16 space-y-3">
+          <span className="text-[11px] tracking-[0.25em] uppercase text-stone-400 font-medium">
+            Core Disciplines
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-serif font-light text-stone-100 tracking-tight">
+            Consultancy Services
+          </h2>
+          <p className="text-stone-400 text-sm sm:text-base font-light leading-relaxed">
+            Methodical exposure evaluations and physical agent testing performed strictly to recognised UK and European standards.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="p-8 bg-slate-900/60 rounded-xl border border-slate-800 backdrop-blur-sm hover:border-sky-500/50 transition">
-            <div className="w-10 h-10 rounded-lg bg-sky-950/80 border border-sky-800 text-sky-400 flex items-center justify-center font-bold mb-5">
-              01
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Service 01 */}
+          <div className="p-10 bg-[#0f1012] border border-stone-800/80 hover:border-stone-700 transition duration-300 flex flex-col justify-between">
+            <div>
+              <span className="font-serif text-xs text-stone-500 tracking-[0.2em] uppercase block mb-6">
+                01 // Monitoring
+              </span>
+              <h3 className="text-2xl font-serif font-light text-stone-100 mb-3 tracking-wide">
+                Workplace Air Monitoring
+              </h3>
+              <p className="text-stone-400 text-sm leading-relaxed font-light">
+                Personal and static air sampling for inhalable and respirable dusts, chemical vapours, and hazardous agents in full accordance with BS EN 689 and EH40 Workplace Exposure Limits (WELs).
+              </p>
             </div>
-            <h3 className="text-xl font-semibold text-white mb-2">Workplace Air Monitoring</h3>
-            <p className="text-slate-400 text-sm leading-relaxed">
-              Personal and static air sampling for a wide range of substances in accordance with BS EN 689 and EH40 Workplace Exposure Limits (WELs).
-            </p>
           </div>
 
-          <div className="p-8 bg-slate-900/60 rounded-xl border border-slate-800 backdrop-blur-sm hover:border-sky-500/50 transition">
-            <div className="w-10 h-10 rounded-lg bg-sky-950/80 border border-sky-800 text-sky-400 flex items-center justify-center font-bold mb-5">
-              02
+          {/* Service 02 */}
+          <div className="p-10 bg-[#0f1012] border border-stone-800/80 hover:border-stone-700 transition duration-300 flex flex-col justify-between">
+            <div>
+              <span className="font-serif text-xs text-stone-500 tracking-[0.2em] uppercase block mb-6">
+                02 // Extraction
+              </span>
+              <h3 className="text-2xl font-serif font-light text-stone-100 mb-3 tracking-wide">
+                LEV Assessments
+              </h3>
+              <p className="text-stone-400 text-sm leading-relaxed font-light">
+                System performance evaluation of Local Exhaust Ventilation (LEV) and Thorough Examination &amp; Testing (TExT) compliant with HSG258 statutory testing frameworks.
+              </p>
             </div>
-            <h3 className="text-xl font-semibold text-white mb-2">LEV Assessments</h3>
-            <p className="text-slate-400 text-sm leading-relaxed">
-              Performance evaluation of Local Exhaust Ventilation (LEV) systems and where feasible, Thorough Examination and Test (TExT) assessment as set out in HSG258.
-            </p>
           </div>
 
-          <div className="p-8 bg-slate-900/60 rounded-xl border border-slate-800 backdrop-blur-sm hover:border-sky-500/50 transition">
-            <div className="w-10 h-10 rounded-lg bg-sky-950/80 border border-sky-800 text-sky-400 flex items-center justify-center font-bold mb-5">
-              03
+          {/* Service 03 */}
+          <div className="p-10 bg-[#0f1012] border border-stone-800/80 hover:border-stone-700 transition duration-300 flex flex-col justify-between">
+            <div>
+              <span className="font-serif text-xs text-stone-500 tracking-[0.2em] uppercase block mb-6">
+                03 // Physical Agents
+              </span>
+              <h3 className="text-2xl font-serif font-light text-stone-100 mb-3 tracking-wide">
+                Noise &amp; Vibration Surveys
+              </h3>
+              <p className="text-stone-400 text-sm leading-relaxed font-light">
+                Comprehensive occupational noise assessments, octave band frequency profiling for hearing defender specification, and Hand-Arm / Whole-Body Vibration (HAVS) exposure evaluations.
+              </p>
             </div>
-            <h3 className="text-xl font-semibold text-white mb-2">Noise & Vibration Surveys</h3>
-            <p className="text-slate-400 text-sm leading-relaxed">
-              Workplace noise risk assessments, octave band frequency analysis for hearing protection attenuation, and Hand-Arm/Whole Body Vibration (HAVS) exposure profiling.
-            </p>
           </div>
 
-          <div className="p-8 bg-slate-900/60 rounded-xl border border-slate-800 backdrop-blur-sm hover:border-sky-500/50 transition">
-            <div className="w-10 h-10 rounded-lg bg-sky-950/80 border border-sky-800 text-sky-400 flex items-center justify-center font-bold mb-5">
-              04
+          {/* Service 04 */}
+          <div className="p-10 bg-[#0f1012] border border-stone-800/80 hover:border-stone-700 transition duration-300 flex flex-col justify-between">
+            <div>
+              <span className="font-serif text-xs text-stone-500 tracking-[0.2em] uppercase block mb-6">
+                04 // Chemical Safety
+              </span>
+              <h3 className="text-2xl font-serif font-light text-stone-100 mb-3 tracking-wide">
+                COSHH &amp; Chemical Audits
+              </h3>
+              <p className="text-stone-400 text-sm leading-relaxed font-light">
+                Hazardous substance reviews, substitution evaluations, exposure mitigation hierarchies, and structured COSHH management documentation.
+              </p>
             </div>
-            <h3 className="text-xl font-semibold text-white mb-2">COSHH & Chemical Risk Audits</h3>
-            <p className="text-slate-400 text-sm leading-relaxed">
-              Systematic hazardous substance reviews, substitution assessments, exposure control strategy design, and creation of compliant COSHH assessment documentation.
-            </p>
           </div>
         </div>
       </section>
 
+      {/* Decorative Hairline Rule */}
+      <div className="max-w-6xl mx-auto w-full px-6">
+        <div className="h-px bg-stone-800/80 w-full" />
+      </div>
+
       {/* Principal Consultant & Qualifications Section */}
-      <section id="about" className="relative z-10 py-16 px-4 sm:px-6 max-w-6xl mx-auto w-full">
-        <div className="rounded-2xl bg-linear-to-r from-slate-900 via-slate-900 to-sky-950/40 border border-slate-800 p-8 sm:p-12 shadow-2xl space-y-8">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-slate-800 pb-8">
-            <div className="space-y-3 max-w-2xl">
-              <span className="text-sky-400 font-bold text-xs tracking-widest uppercase">
-                Professional Accreditation & Leadership
+      <section id="about" className="relative z-10 py-28 px-6 max-w-6xl mx-auto w-full">
+        <div className="border border-stone-800/80 bg-[#0f1012] p-10 sm:p-14 space-y-12">
+          
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-stone-800/80 pb-10">
+            <div className="space-y-4 max-w-2xl">
+              <span className="text-[11px] tracking-[0.25em] uppercase text-stone-400 font-medium">
+                Professional Leadership
               </span>
-              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
-                Gareth Brock &mdash; Certified Occupational Hygienist
+              <h2 className="text-3xl sm:text-4xl font-serif font-light text-stone-100 tracking-tight">
+                Gareth Brock
               </h2>
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                Combining over 20 years of operational Health, Safety, and Environmental (HS&amp;E) experience with specialist occupational hygiene consultancy. Every survey and exposure control strategy is underpinned by recognized academic and professional qualifications.
+              <p className="text-stone-300 text-sm sm:text-base font-serif italic font-light leading-relaxed">
+                Certified Occupational Hygienist &bull; HS&amp;E Consultant
+              </p>
+              <p className="text-stone-400 text-sm sm:text-base leading-relaxed font-light">
+                Backed by 20 years of operational Health, Safety, and Environmental (HS&amp;E) leadership alongside specialist occupational hygiene consultancy. Every exposure assessment and engineering recommendation is rooted in formal BOHS-accredited competencies and academic discipline.
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3.5 py-1.5 rounded-md bg-sky-950/90 border border-sky-700/60 text-sky-300 font-bold text-xs tracking-wide">
+            <div className="flex flex-wrap gap-2.5">
+              <span className="px-4 py-2 border border-stone-700 text-stone-300 font-mono text-[11px] tracking-wider uppercase">
                 MSc Occ. Hyg.
               </span>
-              <span className="px-3.5 py-1.5 rounded-md bg-sky-950/90 border border-sky-700/60 text-sky-300 font-bold text-xs tracking-wide">
+              <span className="px-4 py-2 border border-stone-700 text-stone-300 font-mono text-[11px] tracking-wider uppercase">
                 CertOH
               </span>
-              <span className="px-3.5 py-1.5 rounded-md bg-sky-950/90 border border-sky-700/60 text-sky-300 font-bold text-xs tracking-wide">
+              <span className="px-4 py-2 border border-stone-700 text-stone-300 font-mono text-[11px] tracking-wider uppercase">
                 CoC (Control)
               </span>
             </div>
           </div>
 
-          {/* Credential Pillars */}
+          {/* Three Pillar Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-6 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-2">
-              <div className="text-sky-400 font-extrabold text-lg tracking-tight">
+            <div className="p-8 bg-[#0c0d0e] border border-stone-800 space-y-3">
+              <div className="text-xs font-mono tracking-widest text-[#d4af37] uppercase">
+                Accreditation
+              </div>
+              <h3 className="text-xl font-serif font-light text-stone-100">
                 CertOH
-              </div>
-              <h3 className="text-white font-semibold text-sm">
+              </h3>
+              <p className="text-xs text-stone-400 tracking-wide uppercase font-medium">
                 Certificate of Operational Competence
-              </h3>
-              <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                Professional accreditation in comprehensive occupational hygiene practice, workplace hazard evaluation, and risk management.
+              </p>
+              <p className="text-stone-400 text-xs sm:text-sm leading-relaxed font-light pt-2">
+                Demonstrated professional proficiency in hazard identification, comprehensive measurement strategies, and health risk mitigation.
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-2">
-              <div className="text-sky-400 font-extrabold text-lg tracking-tight">
+            <div className="p-8 bg-[#0c0d0e] border border-stone-800 space-y-3">
+              <div className="text-xs font-mono tracking-widest text-[#d4af37] uppercase">
+                Specialism
+              </div>
+              <h3 className="text-xl font-serif font-light text-stone-100">
                 CoC (Control)
-              </div>
-              <h3 className="text-white font-semibold text-sm">
-                Certificate of Competence in Control
               </h3>
-              <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                Specialist qualification covering performance evaluation and testing of Local Exhaust Ventilation (LEV) systems alongside application of the wider hierarchy of controls requirement.
+              <p className="text-xs text-stone-400 tracking-wide uppercase font-medium">
+                Competence in Engineering Control
+              </p>
+              <p className="text-stone-400 text-xs sm:text-sm leading-relaxed font-light pt-2">
+                Specialist credential governing the design appraisal, aerodynamic performance testing, and specification of LEV extraction systems.
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-2">
-              <div className="text-sky-400 font-extrabold text-lg tracking-tight">
-                MSc Occupational Hygiene
+            <div className="p-8 bg-[#0c0d0e] border border-stone-800 space-y-3">
+              <div className="text-xs font-mono tracking-widest text-[#d4af37] uppercase">
+                Postgraduate
               </div>
-              <h3 className="text-white font-semibold text-sm">
-                BOHS-Approved Postgraduate Degree
+              <h3 className="text-xl font-serif font-light text-stone-100">
+                MSc Occupational Hygiene
               </h3>
-              <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                Advanced scientific training in inhalation toxicology, aerosol physics, physical agents, and statistical exposure assessment.
+              <p className="text-xs text-stone-400 tracking-wide uppercase font-medium">
+                BOHS-Accredited Degree
+              </p>
+              <p className="text-stone-400 text-xs sm:text-sm leading-relaxed font-light pt-2">
+                Postgraduate scientific grounding in aerosol physics, inhalation toxicology, physical agents, and statistical compliance modelling.
               </p>
             </div>
           </div>
@@ -202,25 +257,40 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="relative z-10 py-20 px-4 sm:px-6 max-w-4xl mx-auto w-full">
+      <section id="contact" className="relative z-10 py-24 px-6 max-w-4xl mx-auto w-full">
+        <div className="text-center mb-12 space-y-3">
+          <span className="text-[11px] tracking-[0.25em] uppercase text-stone-400 font-medium">
+            Direct Dialogue
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-serif font-light text-stone-100 tracking-tight">
+            Schedule an Engagement
+          </h2>
+          <p className="text-stone-400 text-sm font-light max-w-md mx-auto">
+            Discuss upcoming occupational hygiene monitoring, LEV testing, or HS&amp;E advisory requirements for early 2027.
+          </p>
+        </div>
         <ContactForm />
       </section>
 
       {/* Footer */}
-      <footer className="relative z-10 border-t border-slate-800/80 bg-slate-950 py-12 px-4 sm:px-6">
-        <div className="max-w-6xl mx-auto flex flex-col items-center justify-center gap-6 text-sm text-slate-400 text-center">
-          <div>
-            <p className="font-extrabold text-white text-xl tracking-tight">Waterledge Consultancy</p>
-            <p className="mt-1 text-slate-400 text-xs sm:text-sm">Occupational Hygiene &amp; Exposure Control</p>
+      <footer className="relative z-10 border-t border-stone-800/80 bg-[#090a0b] py-16 px-6">
+        <div className="max-w-6xl mx-auto flex flex-col items-center justify-center gap-8 text-center">
+          <div className="space-y-1">
+            <p className="font-serif text-lg font-light tracking-widest text-stone-200 uppercase">
+              Waterledge Consultancy
+            </p>
+            <p className="text-stone-500 text-xs tracking-widest uppercase font-light">
+              Occupational Hygiene &bull; Exposure Control &bull; Acoustic &amp; Environmental Health
+            </p>
           </div>
           
-          <div className="flex flex-wrap items-center justify-center gap-6 text-xs sm:text-sm font-medium text-slate-300">
-            <a href="#services" className="hover:text-sky-400 transition">Services</a>
-            <a href="#about" className="hover:text-sky-400 transition">Qualifications</a>
-            <a href="#contact" className="hover:text-sky-400 transition">Contact</a>
+          <div className="flex flex-wrap items-center justify-center gap-8 text-[11px] font-medium tracking-[0.25em] uppercase text-stone-400">
+            <a href="#services" className="hover:text-stone-200 transition">Services</a>
+            <a href="#about" className="hover:text-stone-200 transition">Qualifications</a>
+            <a href="#contact" className="hover:text-stone-200 transition">Contact</a>
           </div>
 
-          <p className="text-xs text-slate-500">
+          <p className="text-[11px] text-stone-600 tracking-wider">
             &copy; {new Date().getFullYear()} Waterledge Consultancy. All rights reserved.
           </p>
         </div>
