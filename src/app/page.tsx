@@ -186,13 +186,14 @@ export default function Home() {
                 Gareth Brock
               </h2>
               <p className="text-stone-300 text-sm sm:text-base font-serif italic font-light leading-relaxed">
-                Certified Occupational Hygienist &bull; HS&amp;E Consultant
+                Certified Occupational Hygienist
               </p>
               <p className="text-stone-400 text-sm sm:text-base leading-relaxed font-light">
-                Backed by 20 years of operational Health, Safety, and Environmental (HS&amp;E) leadership alongside specialist occupational hygiene consultancy. Every exposure assessment and engineering recommendation is rooted in formal BOHS-accredited competencies and academic discipline.
+                Backed by 20 years of operational Health, Safety, and Environmental (HS&amp;E) experience alongside specialist occupational hygiene consultancy. Every exposure assessment and control recommendation is rooted in formal BOHS-accredited competencies and academic discipline.
               </p>
             </div>
 
+            {/* Credential Badges */}
             <div className="flex flex-wrap gap-2.5">
               <span className="px-4 py-2 border border-stone-700 text-stone-300 font-mono text-[11px] tracking-wider uppercase">
                 MSc Occ. Hyg.
@@ -203,11 +204,17 @@ export default function Home() {
               <span className="px-4 py-2 border border-stone-700 text-stone-300 font-mono text-[11px] tracking-wider uppercase">
                 CoC (Control)
               </span>
+              <span 
+                className="px-4 py-2 border border-stone-700 text-stone-300 font-mono text-[11px] tracking-wider uppercase"
+                title="Licentiate membership of the BOHS requiring continued professional development (CPD)"
+              >
+                LFOH
+              </span>
             </div>
           </div>
 
-          {/* Three Pillar Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* Four Pillar Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="p-8 bg-[#0c0d0e] border border-stone-800 space-y-3">
               <div className="text-xs font-mono tracking-widest text-[#d4af37] uppercase">
                 Accreditation
@@ -250,6 +257,21 @@ export default function Home() {
               </p>
               <p className="text-stone-400 text-xs sm:text-sm leading-relaxed font-light pt-2">
                 Postgraduate scientific grounding in aerosol physics, inhalation toxicology, physical agents, and statistical compliance modelling.
+              </p>
+            </div>
+
+            <div className="p-8 bg-[#0c0d0e] border border-stone-800 space-y-3">
+              <div className="text-xs font-mono tracking-widest text-[#d4af37] uppercase">
+                Membership
+              </div>
+              <h3 className="text-xl font-serif font-light text-stone-100">
+                LFOH
+              </h3>
+              <p className="text-xs text-stone-400 tracking-wide uppercase font-medium">
+                Faculty of Occupational Hygiene
+              </p>
+              <p className="text-stone-400 text-xs sm:text-sm leading-relaxed font-light pt-2">
+                Licentiate membership of the BOHS requiring continued professional development (CPD).
               </p>
             </div>
           </div>
