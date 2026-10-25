@@ -56,16 +56,16 @@ export default function Home() {
           {/* Editorial Display Heading */}
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-serif font-light text-stone-100 tracking-tight leading-[1.12]">
             Safeguarding Health <br className="hidden sm:inline" />
-            in the Modern Workplace
+            in the Workplace
           </h1>
 
           {/* Editorial Sub-copy */}
           <p className="text-lg sm:text-xl text-stone-300 font-serif italic max-w-2xl mx-auto leading-relaxed font-light">
-            Specialist occupational hygiene assessments and exposure control engineering.
+            Occupational hygiene assessments and specialist exposure control applications.
           </p>
 
           <p className="text-sm sm:text-base text-stone-400 max-w-xl mx-auto leading-relaxed font-light tracking-wide">
-            Delivering rigorous workplace exposure evaluations aligned with HSE guidance and British &amp; European Standards. Formal project commissions currently scheduling for 2027.
+            Delivering effective workplace exposure evaluations aligned with HSE guidance and British &amp; European Standards. Formal project commissions currently scheduling for 2027.
           </p>
 
           {/* Minimal Action Buttons */}
@@ -101,7 +101,7 @@ export default function Home() {
             Consultancy Services
           </h2>
           <p className="text-stone-400 text-sm sm:text-base font-light leading-relaxed">
-            Methodical exposure evaluations and physical agent testing performed strictly to recognised UK and European standards.
+            COSHH exposure evaluations and physical agent testing performed strictly to recognised UK and European standards.
           </p>
         </div>
 
@@ -116,7 +116,7 @@ export default function Home() {
                 Workplace Air Monitoring
               </h3>
               <p className="text-stone-400 text-sm leading-relaxed font-light">
-                Personal and static air sampling for inhalable and respirable dusts, chemical vapours, and hazardous agents in full accordance with BS EN 689 and EH40 Workplace Exposure Limits (WELs).
+                Air sampling of targeted workplace operations can be deployed to determine exposure to a wide range of substances in accordance with BS EN 689 and EH40 Workplace Exposure Limits (WELs). Inclusion of skin absorption and ingestion exposure pathways along with dermal risk shall be included in any workplace air sampling scope. 
               </p>
             </div>
           </div>
@@ -146,7 +146,7 @@ export default function Home() {
                 Noise &amp; Vibration Surveys
               </h3>
               <p className="text-stone-400 text-sm leading-relaxed font-light">
-                Comprehensive occupational noise assessments, octave band frequency profiling for hearing defender specification, and Hand-Arm / Whole-Body Vibration (HAVS) exposure evaluations.
+                 Occupational noise assessments, octave band frequency profiling for hearing defender specification, and Hand-Arm / Whole-Body Vibration (HAVS) exposure evaluations.
               </p>
             </div>
           </div>
@@ -180,7 +180,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-stone-800/80 pb-10">
             <div className="space-y-4 max-w-2xl">
               <span className="text-[11px] tracking-[0.25em] uppercase text-stone-400 font-medium">
-                Professional Leadership
+                Professional Service Provision
               </span>
               <h2 className="text-3xl sm:text-4xl font-serif font-light text-stone-100 tracking-tight">
                 Gareth Brock
@@ -266,7 +266,7 @@ export default function Home() {
             Schedule an Engagement
           </h2>
           <p className="text-stone-400 text-sm font-light max-w-md mx-auto">
-            Discuss upcoming occupational hygiene monitoring, LEV testing, or HS&amp;E advisory requirements for early 2027.
+            Discuss upcoming occupational hygiene monitoring, LEV testing, or any other Workplace Health specific advisory requirements for early 2027.
           </p>
         </div>
         <ContactForm />
@@ -280,7 +280,7 @@ export default function Home() {
               Waterledge Consultancy
             </p>
             <p className="text-stone-500 text-xs tracking-widest uppercase font-light">
-              Occupational Hygiene &bull; Exposure Control &bull; Acoustic &amp; Environmental Health
+              Occupational Hygiene &bull; Exposure Control &bull; Workplace Health
             </p>
           </div>
           
