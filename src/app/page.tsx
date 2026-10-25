@@ -178,7 +178,7 @@ export default function Home() {
         <div className="border border-stone-800/80 bg-[#0f1012] p-10 sm:p-14 space-y-12">
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-stone-800/80 pb-10">
-            <div className="space-y-4 max-w-2xl">
+            <div className="space-y-4 max-w-xl">
               <span className="text-[11px] tracking-[0.25em] uppercase text-stone-400 font-medium">
                 Professional Service Provision
               </span>
@@ -213,8 +213,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Four Pillar Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Four Pillar Cards in Balanced 2x2 Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-8 bg-[#0c0d0e] border border-stone-800 space-y-3">
               <div className="text-xs font-mono tracking-widest text-[#d4af37] uppercase">
                 Accreditation
