@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
@@ -32,6 +33,9 @@ export default function Home() {
             </a>
             <a href="#about" className="hover:text-stone-100 transition duration-200">
               Qualifications
+            </a>
+            <a href="#governance" className="hover:text-stone-100 transition duration-200">
+              Governance &amp; Compliance
             </a>
             <a 
               href="#contact" 
@@ -278,6 +282,137 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Decorative Hairline Rule */}
+      <div className="max-w-6xl mx-auto w-full px-6">
+        <div className="h-px bg-stone-800/80 w-full" />
+      </div>
+
+      {/* NEW: Governance, Standards & Commercial Onboarding Section */}
+      <section id="governance" className="relative z-10 py-28 px-6 max-w-6xl mx-auto w-full">
+        <div className="max-w-2xl mb-16 space-y-3">
+          <span className="text-[11px] tracking-[0.25em] uppercase text-stone-400 font-medium">
+            Corporate Assurance &amp; Procurement
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-serif font-light text-stone-100 tracking-tight">
+            Governance, Standards &amp; Commercial
+          </h2>
+          <p className="text-stone-400 text-sm sm:text-base font-light leading-relaxed">
+            Transparent quality management, operational safety documentation, statutory insurances, and supplier onboarding details for client procurement teams.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Card 01: Quality & Methodologies */}
+          <Link 
+            href="/quality"
+            className="group p-10 bg-[#0f1012] border border-stone-800/80 hover:border-[#d4af37]/60 transition duration-300 flex flex-col justify-between"
+          >
+            <div>
+              <div className="flex items-center justify-between mb-6">
+                <span className="font-mono text-xs text-[#d4af37] tracking-[0.2em] uppercase">
+                  01 // Quality Assurance
+                </span>
+                <span className="text-xs font-mono text-stone-500 group-hover:text-stone-200 transition">
+                  ISO 9001 Aligned &rarr;
+                </span>
+              </div>
+              <h3 className="text-2xl font-serif font-light text-stone-100 mb-3 tracking-wide">
+                Quality Control &amp; Methodologies
+              </h3>
+              <p className="text-stone-400 text-sm leading-relaxed font-light mb-6">
+                Sole-principal Quality Management System (QMS) structured around ISO 9001 principles. Full adherence to HSE MDHS 14/4, BS EN 689:2018, HSG 173, HSG 258, alongside NIOSH, OSHA, and ACGIH analytical and sampling protocols.
+              </p>
+            </div>
+            <span className="text-[11px] font-medium tracking-[0.22em] uppercase text-stone-300 group-hover:text-[#d4af37] transition">
+              View Methodological Framework &rarr;
+            </span>
+          </Link>
+
+          {/* Card 02: RAMS & Operational Safety */}
+          <Link 
+            href="/safety-rams"
+            className="group p-10 bg-[#0f1012] border border-stone-800/80 hover:border-[#d4af37]/60 transition duration-300 flex flex-col justify-between"
+          >
+            <div>
+              <div className="flex items-center justify-between mb-6">
+                <span className="font-mono text-xs text-[#d4af37] tracking-[0.2em] uppercase">
+                  02 // Field Safety
+                </span>
+                <span className="text-xs font-mono text-stone-500 group-hover:text-stone-200 transition">
+                  RAMS Repository &rarr;
+                </span>
+              </div>
+              <h3 className="text-2xl font-serif font-light text-stone-100 mb-3 tracking-wide">
+                RAMS &amp; Operational Safety
+              </h3>
+              <p className="text-stone-400 text-sm leading-relaxed font-light mb-6">
+                Standardised Risk Assessments and Method Statements (RAMS) governing on-site survey conduct, intrinsically safe (ATEX) instrumentation deployment, and safe working protocols in industrial environments.
+              </p>
+            </div>
+            <span className="text-[11px] font-medium tracking-[0.22em] uppercase text-stone-300 group-hover:text-[#d4af37] transition">
+              Access RAMS &amp; Safety Protocols &rarr;
+            </span>
+          </Link>
+
+          {/* Card 03: Insurance & Indemnity */}
+          <Link 
+            href="/insurance"
+            className="group p-10 bg-[#0f1012] border border-stone-800/80 hover:border-[#d4af37]/60 transition duration-300 flex flex-col justify-between"
+          >
+            <div>
+              <div className="flex items-center justify-between mb-6">
+                <span className="font-mono text-xs text-[#d4af37] tracking-[0.2em] uppercase">
+                  03 // Underwriting
+                </span>
+                <span className="text-xs font-mono text-stone-500 group-hover:text-stone-200 transition">
+                  Policy Schedules &rarr;
+                </span>
+              </div>
+              <h3 className="text-2xl font-serif font-light text-stone-100 mb-3 tracking-wide">
+                Public Liability &amp; Indemnity
+              </h3>
+              <p className="text-stone-400 text-sm leading-relaxed font-light mb-6">
+                Comprehensive Professional Indemnity (PI) and Public Liability (PL) coverage structured specifically for technical occupational hygiene advisory, exposure testing, and LEV statutory thorough examinations.
+              </p>
+            </div>
+            <span className="text-[11px] font-medium tracking-[0.22em] uppercase text-stone-300 group-hover:text-[#d4af37] transition">
+              Review Insurance Cover &rarr;
+            </span>
+          </Link>
+
+          {/* Card 04: Commercial & Banking */}
+          <Link 
+            href="/remittance"
+            className="group p-10 bg-[#0f1012] border border-stone-800/80 hover:border-[#d4af37]/60 transition duration-300 flex flex-col justify-between"
+          >
+            <div>
+              <div className="flex items-center justify-between mb-6">
+                <span className="font-mono text-xs text-[#d4af37] tracking-[0.2em] uppercase">
+                  04 // Procurement
+                </span>
+                <span className="text-xs font-mono text-stone-500 group-hover:text-stone-200 transition">
+                  Supplier Setup &rarr;
+                </span>
+              </div>
+              <h3 className="text-2xl font-serif font-light text-stone-100 mb-3 tracking-wide">
+                Banking &amp; Remittance
+              </h3>
+              <p className="text-stone-400 text-sm leading-relaxed font-light mb-6">
+                Dedicated business banking verification, BACS remittance details, purchase order procedures, and standard commercial settlement terms for rapid vendor onboarding.
+              </p>
+            </div>
+            <span className="text-[11px] font-medium tracking-[0.22em] uppercase text-stone-300 group-hover:text-[#d4af37] transition">
+              View Commercial &amp; Payment Terms &rarr;
+            </span>
+          </Link>
+        </div>
+      </section>
+
+      {/* Decorative Hairline Rule */}
+      <div className="max-w-6xl mx-auto w-full px-6">
+        <div className="h-px bg-stone-800/80 w-full" />
+      </div>
+
       {/* Contact Section */}
       <section id="contact" className="relative z-10 py-24 px-6 max-w-4xl mx-auto w-full">
         <div className="text-center mb-12 space-y-3">
@@ -309,7 +444,10 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-center gap-8 text-[11px] font-medium tracking-[0.25em] uppercase text-stone-400">
             <a href="#services" className="hover:text-stone-200 transition">Services</a>
             <a href="#about" className="hover:text-stone-200 transition">Qualifications</a>
-            <a href="#contact" className="hover:text-stone-200 transition">Contact</a>
+            <Link href="/quality" className="hover:text-stone-200 transition">Quality &amp; Standards</Link>
+            <Link href="/safety-rams" className="hover:text-stone-200 transition">RAMS</Link>
+            <Link href="/insurance" className="hover:text-stone-200 transition">Insurance</Link>
+            <Link href="/remittance" className="hover:text-stone-200 transition">Remittance</Link>
           </div>
 
           <p className="text-[11px] text-stone-600 tracking-wider">
