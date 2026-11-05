@@ -27,7 +27,7 @@ export default function RiskManagementPage() {
             Risk Management and Governance
           </h1>
           <p className="text-neutral-400 max-w-2xl text-lg leading-relaxed">
-            Systematic occupational health risk governance—engineering sustainable exposure reduction through the statutory Hierarchy of Control and ALARP verification.
+            Systematic occupational health risk governance to reduce exposures through the statutory Hierarchy of Control and ALARP verification.
           </p>
         </header>
 
