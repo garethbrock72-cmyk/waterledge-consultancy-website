@@ -31,20 +31,18 @@ export default function RiskManagementPage() {
           </p>
         </header>
 
-        {/* Hero Diagram Stage */}
-        <section className="relative rounded-xl border border-neutral-800 bg-neutral-900/60 p-4 overflow-hidden">
-          <div className="relative aspect-video w-full rounded-lg overflow-hidden bg-neutral-900">
-            <Image
-              src="/images/occupational_hygiene_risk_governance_2x.webp"
-              alt="Engineering diagram showing the occupational hygiene Hierarchy of Control from Elimination and Substitution to LEV and RPE"
-              width={1024}
-              height={1024}
-              priority
-              className="w-full h-auto max-w-4xl object-contain rounded-lg"
-            />
-          </div>
-          <p className="mt-3 text-xs text-neutral-400 font-mono">
-            Aligned with COSHH Regulations 6-12, CONAW Regulations 5-10, COVAW 5-8 and HSG 65.
+       {/* Hero Diagram Stage */}
+        <section className="space-y-3">
+          <Image
+            src="/images/occupational_hygiene_risk_governance_2x.webp"
+            alt="Occupational Hygiene Risk Governance and Hierarchy of Control diagram"
+            width={2048}
+            height={2048}
+            priority
+            className="w-full h-auto rounded-xl"
+          />
+          <p className="text-xs text-neutral-400 font-mono">
+            Aligned with ISO 45001, HSE HSG65 Plan-Do-Check-Act, and COSHH Regulation 7 Hierarchy of Control.
           </p>
         </section>
 

@@ -31,19 +31,17 @@ export default function PhysicalAgentsPage() {
           </p>
         </header>
 
-        {/* Hero Diagram Stage */}
-        <section className="relative rounded-xl border border-neutral-800 bg-neutral-900/60 p-4 overflow-hidden">
-          <div className="relative aspect-video w-full rounded-lg overflow-hidden bg-neutral-900">
-            <Image
-              src="/images/hav_noise_assessment_cleaned.webp"
-              alt="Technical schematic illustrating tri-axial hand-arm vibration measurement (ISO 5349) and Class 1 acoustic field propagation"
-              width={1024}
-              height={1024}
-              priority
-              className="w-full h-auto max-w-4xl object-contain rounded-lg"
-            />
-          </div>
-          <p className="mt-3 text-xs text-neutral-400 font-mono">
+       {/* Hero Diagram Stage */}
+        <section className="space-y-3">
+          <Image
+            src="/images/hav_noise_assessment_cleaned.webp"
+            alt="Technical schematic illustrating tri-axial hand-arm vibration measurement (ISO 5349) and Class 1 acoustic field propagation"
+            width={2048}
+            height={2048}
+            priority
+            className="w-full h-auto rounded-xl"
+          />
+          <p className="text-xs text-neutral-400 font-mono">
             Compliant with BS EN ISO 9612 (Noise), BS EN ISO 5349-1&amp;2 (HAVS), and BS EN ISO 7730 / 7243 (Thermal).
           </p>
         </section>
