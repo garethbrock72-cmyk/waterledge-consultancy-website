@@ -35,7 +35,7 @@ export default function PhysicalAgentsPage() {
         <section className="relative rounded-xl border border-neutral-800 bg-neutral-900/60 p-4 overflow-hidden">
           <div className="relative aspect-video w-full rounded-lg overflow-hidden bg-neutral-900">
             <Image
-              src="/images/physical-agents-acoustic-vibration.webp"
+              src="/images/hav_noise_assessment_cleaned.webp"
               alt="Technical schematic illustrating tri-axial hand-arm vibration measurement (ISO 5349) and Class 1 acoustic field propagation"
               fill
               priority

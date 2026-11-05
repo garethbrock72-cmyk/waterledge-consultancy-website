@@ -35,7 +35,7 @@ export default function RiskManagementPage() {
         <section className="relative rounded-xl border border-neutral-800 bg-neutral-900/60 p-4 overflow-hidden">
           <div className="relative aspect-video w-full rounded-lg overflow-hidden bg-neutral-900">
             <Image
-              src="/images/occupational-hygiene-risk-management.webp"
+              src="/images/occupational_hygiene_risk_governance_2x.webp"
               alt="Engineering diagram showing the occupational hygiene Hierarchy of Control from Elimination and Substitution to LEV and RPE"
               fill
               priority
