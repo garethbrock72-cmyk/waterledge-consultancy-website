@@ -25,19 +25,17 @@ export default function CoshhExposurePage() {
           </p>
         </header>
 
-       {/* Hero Diagram Stage */}
-        <section className="rounded-xl border border-neutral-800 bg-neutral-900/40 p-4">
-          <div className="w-full flex justify-center rounded-lg overflow-hidden bg-neutral-900">
-            <Image
-              src="/images/coshh-exposure-assessment.webp"
-              alt="Technical diagram illustrating COSHH exposure assessment workflow..."
-              width={1024}
-              height={1024}
-              priority
-              className="w-full h-auto max-w-4xl object-contain rounded-lg"
-            />
-          </div>
-          <p className="mt-3 text-xs text-neutral-400 font-mono">
+      {/* Hero Diagram Stage */}
+        <section className="space-y-3">
+          <Image
+            src="/images/coshh-exposure-assessment.webp"
+            alt="Technical diagram illustrating COSHH exposure assessment workflow, operator breathing zone sampling, and SEG statistical compliance under BS EN 689"
+            width={2048}
+            height={2048}
+            priority
+            className="w-full h-auto rounded-xl"
+          />
+          <p className="text-xs text-neutral-400 font-mono">
             Benchmarked against HSE EH40, MDHS methods, and BS EN 689:2018.
           </p>
         </section>
