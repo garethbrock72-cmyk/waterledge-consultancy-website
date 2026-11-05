@@ -37,10 +37,10 @@ export default function PhysicalAgentsPage() {
             <Image
               src="/images/hav_noise_assessment_cleaned.webp"
               alt="Technical schematic illustrating tri-axial hand-arm vibration measurement (ISO 5349) and Class 1 acoustic field propagation"
-              fill
+              width={1024}
+              height={1024}
               priority
-              className="object-contain"
-              sizes="(max-width: 1200px) 100vw, 1024px"
+              className="w-full h-auto max-w-4xl object-contain rounded-lg"
             />
           </div>
           <p className="mt-3 text-xs text-neutral-400 font-mono">

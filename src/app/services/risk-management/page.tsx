@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Occupational Hygiene Risk Management | Waterledge Consultancy",
   description:
-    "Strategic workplace health risk governance, Hierarchy of Control implementation, COSHH chemical safety management, and ALARP verification.",
+    "Strategic workplace health risk governance; Hierarchy of Control implementation; COSHH, CONAW & COVAW management; and ALARP verification.",
 };
 
 export default function RiskManagementPage() {
@@ -24,10 +24,10 @@ export default function RiskManagementPage() {
             Service 04
           </span>
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            Risk Management
+            Risk Management and Governance
           </h1>
           <p className="text-neutral-400 max-w-2xl text-lg leading-relaxed">
-            Systematic occupational health risk governance—engineering sustainable exposure reduction through the statutory Hierarchy of Control and rigorous ALARP verification.
+            Systematic occupational health risk governance—engineering sustainable exposure reduction through the statutory Hierarchy of Control and ALARP verification.
           </p>
         </header>
 
@@ -37,14 +37,14 @@ export default function RiskManagementPage() {
             <Image
               src="/images/occupational_hygiene_risk_governance_2x.webp"
               alt="Engineering diagram showing the occupational hygiene Hierarchy of Control from Elimination and Substitution to LEV and RPE"
-              fill
+              width={1024}
+              height={1024}
               priority
-              className="object-contain"
-              sizes="(max-width: 1200px) 100vw, 1024px"
+              className="w-full h-auto max-w-4xl object-contain rounded-lg"
             />
           </div>
           <p className="mt-3 text-xs text-neutral-400 font-mono">
-            Aligned with COSHH Regulation 7, Management of Health and Safety at Work Regulations 1999, and HSG 65.
+            Aligned with COSHH Regulations 6-12, CONAW Regulations 5-10, COVAW 5-8 and HSG 65.
           </p>
         </section>
 

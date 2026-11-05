@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "COSHH Exposure Assessment & Monitoring | Waterledge Consultancy",
+  title: "COSHH Exposure Assessment | Waterledge Consultancy",
   description: "Comprehensive hazardous substance risk evaluations, workplace air monitoring, and compliance appraisal against EH40 Workplace Exposure Limits.",
 };
 
@@ -25,16 +25,16 @@ export default function CoshhExposurePage() {
           </p>
         </header>
 
-        {/* Hero Diagram Stage */}
-        <section className="relative rounded-xl border border-neutral-800 bg-neutral-900/60 p-4 overflow-hidden">
-          <div className="relative aspect-video w-full rounded-lg overflow-hidden bg-neutral-900">
+       {/* Hero Diagram Stage */}
+        <section className="rounded-xl border border-neutral-800 bg-neutral-900/40 p-4">
+          <div className="w-full flex justify-center rounded-lg overflow-hidden bg-neutral-900">
             <Image
               src="/images/coshh-exposure-assessment.webp"
-              alt="Technical diagram illustrating COSHH exposure assessment workflow, operator breathing zone sampling, and SEG statistical compliance under BS EN 689"
-              fill
+              alt="Technical diagram illustrating COSHH exposure assessment workflow..."
+              width={1024}
+              height={1024}
               priority
-              className="object-contain"
-              sizes="(max-width: 1200px) 100vw, 1024px"
+              className="w-full h-auto max-w-4xl object-contain rounded-lg"
             />
           </div>
           <p className="mt-3 text-xs text-neutral-400 font-mono">
