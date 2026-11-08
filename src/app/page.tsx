@@ -105,13 +105,13 @@ export default function Home() {
             Consultancy Services
           </h2>
           <p className="text-stone-400 text-sm sm:text-base font-light leading-relaxed">
-            COSHH exposure evaluations and physical agent testing performed strictly to recognised UK and European standards.
+            COSHH exposure evaluations, personal sampling campaigns, and physical agent testing performed strictly to recognised UK and European standards.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-          {/* Service 01 */}
+          {/* Service 01 - COSHH */}
           <div className="relative rounded-2xl border border-neutral-800 bg-neutral-900/50 p-6 sm:p-8 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
@@ -121,11 +121,11 @@ export default function Home() {
               </div>
               
               <h3 className="text-xl font-bold text-neutral-100 mb-3">
-                COSHH Exposure Assessment & Monitoring
+                COSHH Exposure Assessment &amp; Control
               </h3>
               
               <p className="text-sm text-neutral-400 leading-relaxed mb-6">
-                Quantitative workplace air monitoring, Similar Exposure Group (SEG) profiling, and regulatory compliance testing against HSE EH40 Workplace Exposure Limits and BS EN 689:2018.
+                Regulation 6 hazardous substance risk appraisals, chemical inventory profiling, Workplace Exposure Limit (EH40 WEL) compliance strategies, and control adequacy reviews under COSHH 2002.
               </p>
             </div>
 
@@ -169,7 +169,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Service 03 */}
+          {/* Service 03 - Physical Agents */}
           <div className="relative rounded-2xl border border-neutral-800 bg-neutral-900/50 p-6 sm:p-8 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
@@ -198,7 +198,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Service 04 */}
+          {/* Service 04 - Risk Management */}
           <div className="relative rounded-2xl border border-neutral-800 bg-neutral-900/50 p-6 sm:p-8 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
@@ -219,6 +219,38 @@ export default function Home() {
             <div>
               <Link
                 href="/services/risk-management"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-400 hover:text-emerald-300 transition-colors"
+              >
+                Explore service
+                <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+          </div>
+
+          {/* Service 05 - Occupational Hygiene Personal Sampling (Full-Width Card) */}
+          <div className="relative rounded-2xl border border-neutral-800 bg-neutral-900/50 p-6 sm:p-8 flex flex-col justify-between md:col-span-2">
+            <div>
+              <div className="flex items-center justify-between mb-4">
+                <span className="font-mono text-xs uppercase tracking-widest text-emerald-400">
+                  Service 05
+                </span>
+                <span className="font-mono text-[11px] uppercase tracking-wider text-stone-400 border border-stone-800 px-2.5 py-0.5 rounded">
+                  COSHH &bull; CONAWR &bull; BMGV
+                </span>
+              </div>
+              
+              <h3 className="text-xl font-bold text-neutral-100 mb-3">
+                Occupational Hygiene Personal Sampling
+              </h3>
+              
+              <p className="text-sm text-neutral-400 leading-relaxed mb-6 max-w-4xl">
+                Quantitative personal exposure monitoring across breathing and hearing zones alongside systemic biological uptake. Includes gravimetric &amp; sorbent air sampling (BS EN 689 / ISO 13137), cable-free personal noise dosimetry (IEC 61252 / BS EN ISO 9612), dermal &amp; surface wipe testing, and UKAS-accredited biological monitoring such as post-shift urinalysis for isocyanates against EH40 Biological Monitoring Guidance Values (BMGVs).
+              </p>
+            </div>
+
+            <div>
+              <Link
+                href="/services/personal-sampling"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-400 hover:text-emerald-300 transition-colors"
               >
                 Explore service
@@ -345,7 +377,7 @@ export default function Home() {
         <div className="h-px bg-stone-800/80 w-full" />
       </div>
 
-      {/* NEW: Governance, Standards & Commercial Onboarding Section */}
+      {/* Governance, Standards & Commercial Onboarding Section */}
       <section id="governance" className="relative z-10 py-28 px-6 max-w-6xl mx-auto w-full">
         <div className="max-w-2xl mb-16 space-y-3">
           <span className="text-[11px] tracking-[0.25em] uppercase text-stone-400 font-medium">
