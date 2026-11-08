@@ -13,7 +13,7 @@ export default function CoshhExposureAssessmentPage() {
           Engineering control: Control comparison for volatile vapour release from a small scale mixing operation
         </h2>
         <p className="mt-3 text-stone-400 max-w-3xl leading-relaxed">
-          Comparing effective local exhaust ventilation (LEV) containment at the drum rim against an improper overhead receiving hood that draws volatile solvent plumes across the operative&apos;s breathing zone.
+          Comparing a theoretical concept for effective local exhaust ventilation (LEV) control of volatile vapour release against a similar but ineffective design. All LEV systems require expert engineering design input and other LEV or technical solutions could be recommended.
         </p>
       </div>
 
