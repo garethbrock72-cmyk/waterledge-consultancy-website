@@ -9,8 +9,8 @@ export default function CoshhExposureAssessmentPage() {
           <span className="w-2 h-2 rounded-full bg-[#d4af37]" />
           HSG258 &amp; COSHH REG 6 LEV DESIGN AUDIT
         </div>
-        <h2 className="text-3xl md:text-4xl font-bold text-stone-100 tracking-tight">
-          Engineering Control Appraisal: Source Extraction vs. Canopy Dilution
+       <h2 className="text-3xl md:text-4xl font-bold text-stone-100 tracking-tight">
+          Engineering control: Control comparison for volatile vapour release from a small scale mixing operation
         </h2>
         <p className="mt-3 text-stone-400 max-w-3xl leading-relaxed">
           Comparing effective local exhaust ventilation (LEV) containment at the drum rim against an improper overhead receiving hood that draws volatile solvent plumes across the operative&apos;s breathing zone.
