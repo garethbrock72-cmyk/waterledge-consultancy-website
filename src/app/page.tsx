@@ -112,19 +112,22 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
           {/* Service 01 - COSHH */}
-          <div className="relative rounded-2xl border border-neutral-800 bg-neutral-900/50 p-6 sm:p-8 flex flex-col justify-between">
+          <div className="group p-8 sm:p-10 bg-[#0f1012] border border-stone-800/80 hover:border-[#d4af37]/60 transition duration-300 flex flex-col justify-between">
             <div>
-              <div className="flex items-center justify-between mb-4">
-                <span className="font-mono text-xs uppercase tracking-widest text-emerald-400">
-                  Service 01
+              <div className="flex items-center justify-between mb-6">
+                <span className="font-mono text-xs text-[#d4af37] tracking-[0.2em] uppercase">
+                  01 // Chemical Agents
+                </span>
+                <span className="font-mono text-[11px] uppercase tracking-wider text-stone-400 border border-stone-800 px-2.5 py-0.5">
+                  COSHH 2002 &bull; EH40
                 </span>
               </div>
               
-              <h3 className="text-xl font-bold text-neutral-100 mb-3">
+              <h3 className="text-2xl font-serif font-light text-stone-100 mb-3 tracking-wide">
                 COSHH Exposure Assessment &amp; Control
               </h3>
               
-              <p className="text-sm text-neutral-400 leading-relaxed mb-6">
+              <p className="text-stone-400 text-sm leading-relaxed font-light mb-8">
                 Regulation 6 hazardous substance risk appraisals, chemical inventory profiling, Workplace Exposure Limit (EH40 WEL) compliance strategies, and control adequacy reviews under COSHH 2002.
               </p>
             </div>
@@ -132,28 +135,30 @@ export default function Home() {
             <div>
               <Link
                 href="/services/coshh-exposure-assessment"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-400 hover:text-emerald-300 transition-colors"
+                className="inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.22em] uppercase text-stone-300 hover:text-[#d4af37] transition"
               >
-                Explore service
-                <span aria-hidden="true">→</span>
+                Explore COSHH Assessments &rarr;
               </Link>
             </div>
           </div>
 
           {/* Service 02 - LEV Examination */}
-          <div className="relative rounded-2xl border border-neutral-800 bg-neutral-900/50 p-6 sm:p-8 flex flex-col justify-between">
+          <div className="group p-8 sm:p-10 bg-[#0f1012] border border-stone-800/80 hover:border-[#d4af37]/60 transition duration-300 flex flex-col justify-between">
             <div>
-              <div className="flex items-center justify-between mb-4">
-                <span className="font-mono text-xs uppercase tracking-widest text-emerald-400">
-                  Service 02
+              <div className="flex items-center justify-between mb-6">
+                <span className="font-mono text-xs text-[#d4af37] tracking-[0.2em] uppercase">
+                  02 // Engineering Control
+                </span>
+                <span className="font-mono text-[11px] uppercase tracking-wider text-stone-400 border border-stone-800 px-2.5 py-0.5">
+                  COSHH Reg 9 &bull; HSG 258
                 </span>
               </div>
 
-              <h3 className="text-xl font-bold text-neutral-100 mb-3">
+              <h3 className="text-2xl font-serif font-light text-stone-100 mb-3 tracking-wide">
                 Local Exhaust Ventilation (LEV)
               </h3>
 
-              <p className="text-sm text-neutral-400 leading-relaxed mb-6">
+              <p className="text-stone-400 text-sm leading-relaxed font-light mb-8">
                 Statutory 14-month Thorough Examination and Testing (TExT), commissioning appraisals, and airflow capture verification compliant with COSHH Regulation 9 and HSE HSG 258.
               </p>
             </div>
@@ -161,89 +166,104 @@ export default function Home() {
             <div>
               <Link
                 href="/services/lev"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-400 hover:text-emerald-300 transition-colors"
+                className="inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.22em] uppercase text-stone-300 hover:text-[#d4af37] transition"
               >
-                Explore service
-                <span aria-hidden="true">→</span>
+                Explore LEV Testing &rarr;
               </Link>
             </div>
           </div>
 
-          {/* Service 03 - Physical Agents */}
-          <div className="relative rounded-2xl border border-neutral-800 bg-neutral-900/50 p-6 sm:p-8 flex flex-col justify-between">
+          {/* Service 03 - Physical Agents Suite (Noise, Vibration, Thermal) */}
+          <div className="group p-8 sm:p-10 bg-[#0f1012] border border-stone-800/80 hover:border-[#d4af37]/60 transition duration-300 flex flex-col justify-between">
             <div>
-              <div className="flex items-center justify-between mb-4">
-                <span className="font-mono text-xs uppercase tracking-widest text-emerald-400">
-                  Service 03
+              <div className="flex items-center justify-between mb-6">
+                <span className="font-mono text-xs text-[#d4af37] tracking-[0.2em] uppercase">
+                  03 // Physical Agents Suite
+                </span>
+                <span className="font-mono text-[11px] uppercase tracking-wider text-stone-400 border border-stone-800 px-2.5 py-0.5">
+                  ISO 9612 &bull; ISO 5349 &bull; ISO 7243
                 </span>
               </div>
               
-              <h3 className="text-xl font-bold text-neutral-100 mb-3">
-                Physical Agents
+              <h3 className="text-2xl font-serif font-light text-stone-100 mb-3 tracking-wide">
+                Noise, Vibration &amp; Thermal Risk
               </h3>
               
-              <p className="text-sm text-neutral-400 leading-relaxed mb-6">
-                Comprehensive measurement and risk appraisal of workplace noise (Control of Noise at Work Regs 2005), hand-arm and whole-body vibration (Control of Vibration at Work Regs 2005), and thermal comfort environments.
+              <p className="text-stone-400 text-sm leading-relaxed font-light mb-6">
+                Dedicated quantitative assessments for workplace noise (Control of Noise at Work Regs 2005), triaxial hand-arm and whole-body vibration (Control of Vibration at Work Regs 2005), and WBGT heat stress environments.
               </p>
             </div>
 
-            <div>
+            <div className="pt-2 border-t border-stone-800/80 flex flex-wrap gap-2.5">
               <Link
-                href="/services/physical-agents"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-400 hover:text-emerald-300 transition-colors"
+                href="/services/physical-agents-noise"
+                className="px-3.5 py-2 bg-[#0c0d0e] border border-stone-800 hover:border-[#d4af37] text-[10px] font-medium tracking-[0.18em] uppercase text-stone-200 hover:text-[#d4af37] transition"
               >
-                Explore service
-                <span aria-hidden="true">→</span>
+                Workplace Noise &rarr;
+              </Link>
+              <Link
+                href="/services/physical-agents-vibration"
+                className="px-3.5 py-2 bg-[#0c0d0e] border border-stone-800 hover:border-[#d4af37] text-[10px] font-medium tracking-[0.18em] uppercase text-stone-200 hover:text-[#d4af37] transition"
+              >
+                Vibration (HAVS / WBV) &rarr;
+              </Link>
+              <Link
+                href="/services/physical-agents-thermal"
+                className="px-3.5 py-2 bg-[#0c0d0e] border border-stone-800 hover:border-[#d4af37] text-[10px] font-medium tracking-[0.18em] uppercase text-stone-200 hover:text-[#d4af37] transition"
+              >
+                Thermal Risk &rarr;
               </Link>
             </div>
           </div>
 
           {/* Service 04 - Risk Management */}
-          <div className="relative rounded-2xl border border-neutral-800 bg-neutral-900/50 p-6 sm:p-8 flex flex-col justify-between">
+          <div className="group p-8 sm:p-10 bg-[#0f1012] border border-stone-800/80 hover:border-[#d4af37]/60 transition duration-300 flex flex-col justify-between">
             <div>
-              <div className="flex items-center justify-between mb-4">
-                <span className="font-mono text-xs uppercase tracking-widest text-emerald-400">
-                  Service 04
+              <div className="flex items-center justify-between mb-6">
+                <span className="font-mono text-xs text-[#d4af37] tracking-[0.2em] uppercase">
+                  04 // Governance
+                </span>
+                <span className="font-mono text-[11px] uppercase tracking-wider text-stone-400 border border-stone-800 px-2.5 py-0.5">
+                  Hierarchy of Control
                 </span>
               </div>
               
-              <h3 className="text-xl font-bold text-neutral-100 mb-3">
+              <h3 className="text-2xl font-serif font-light text-stone-100 mb-3 tracking-wide">
                 Risk Management
               </h3>
               
-              <p className="text-sm text-neutral-400 leading-relaxed mb-6">
-                Strategic application of the occupational hygiene hierarchy of control—delivering chemical risk governance, Safe Systems of Work (SSoW), substitution evaluations, and defensible ALARP verification.
+              <p className="text-stone-400 text-sm leading-relaxed font-light mb-8">
+                Strategic application of the occupational hygiene hierarchy of control—delivering chemical and physical risk governance, Safe Systems of Work (SSoW), substitution evaluations, and defensible ALARP verification.
               </p>
             </div>
 
             <div>
               <Link
                 href="/services/risk-management"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-400 hover:text-emerald-300 transition-colors"
+                className="inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.22em] uppercase text-stone-300 hover:text-[#d4af37] transition"
               >
-                Explore service
-                <span aria-hidden="true">→</span>
+                Explore Risk Governance &rarr;
               </Link>
             </div>
           </div>
 
           {/* Service 05 - Occupational Hygiene Personal Sampling (Full-Width Card) */}
-          <div className="relative rounded-2xl border border-neutral-800 bg-neutral-900/50 p-6 sm:p-8 flex flex-col justify-between md:col-span-2">
+          <div className="group p-8 sm:p-10 bg-[#0f1012] border border-stone-800/80 hover:border-[#d4af37]/60 transition duration-300 flex flex-col justify-between md:col-span-2">
             <div>
-              <div className="flex items-center justify-between mb-4">
-                <span className="font-mono text-xs uppercase tracking-widest text-emerald-400">
-                  Service 05
+              <div className="flex items-center justify-between mb-6">
+                <span className="font-mono text-xs text-[#d4af37] tracking-[0.2em] uppercase">
+                  05 // Exposure Monitoring
                 </span>
-                <span className="font-mono text-[11px] uppercase tracking-wider text-stone-400 border border-stone-800 px-2.5 py-0.5 rounded">
+                <span className="font-mono text-[11px] uppercase tracking-wider text-stone-400 border border-stone-800 px-2.5 py-0.5">
                   COSHH &bull; CONAWR &bull; BMGV
                 </span>
               </div>
               
-              <h3 className="text-xl font-bold text-neutral-100 mb-3">
+              <h3 className="text-2xl font-serif font-light text-stone-100 mb-3 tracking-wide">
                 Occupational Hygiene Personal Sampling
               </h3>
               
-              <p className="text-sm text-neutral-400 leading-relaxed mb-6 max-w-4xl">
+              <p className="text-stone-400 text-sm leading-relaxed font-light mb-8 max-w-4xl">
                 Quantitative personal exposure monitoring across breathing and hearing zones alongside systemic biological uptake. Includes gravimetric &amp; sorbent air sampling (BS EN 689 / ISO 13137), cable-free personal noise dosimetry (IEC 61252 / BS EN ISO 9612), dermal &amp; surface wipe testing, and UKAS-accredited biological monitoring such as post-shift urinalysis for isocyanates against EH40 Biological Monitoring Guidance Values (BMGVs).
               </p>
             </div>
@@ -251,10 +271,9 @@ export default function Home() {
             <div>
               <Link
                 href="/services/personal-sampling"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-400 hover:text-emerald-300 transition-colors"
+                className="inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.22em] uppercase text-stone-300 hover:text-[#d4af37] transition"
               >
-                Explore service
-                <span aria-hidden="true">→</span>
+                Explore Personal Sampling &rarr;
               </Link>
             </div>
           </div>
