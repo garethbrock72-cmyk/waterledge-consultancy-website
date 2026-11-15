@@ -14,13 +14,13 @@ const coreStandards = [
     code: "CNWR 2005 (HSE L108)",
     title: "Control of Noise at Work",
     summary:
-      "Statutory compliance assessments against Lower and Upper Exposure Action Values (80 dB(A) / 85 dB(A) LEP,d) and Peak Action Values (135 dB(C) / 137 dB(C) LCPeak).",
+      "Statutory compliance assessments against Lower and Upper Exposure Action/Limit Values (80 dB(A) / 85 dB(A) / 87 dB(A) LEP,d) and Peak Action Values (135 dB(C) / 137 dB(C) / 140 dB(C)LCPeak).",
   },
   {
     code: "BS EN ISO 9612",
     title: "Acoustic Determination of Exposure",
     summary:
-      "Precision task-based, job-based, and full-day measurement strategies with rigorous expanded uncertainty (U) calculations for daily (LEP,d) and weekly (LEP,w) noise exposure.",
+      "Precision task-based, job-based, and full-day measurement strategies with expanded uncertainty (U) calculations for daily (LEP,d) and weekly (LEP,w) noise exposure.",
   },
   {
     code: "BS EN 61672-1 (Class 1)",
@@ -47,7 +47,7 @@ const deliverables = [
     number: "02",
     title: "1/1 Octave-Band Spectral Analysis & BS EN 458",
     description:
-      "Full 16 Hz to 16 kHz octave-band frequency breakdown to match dominant tonal and broadband acoustic energy against hearing defender attenuation curves—targeting 70–80 dB(A) at the ear.",
+      "Octave-band frequency breakdown to match dominant tonal and broadband acoustic energy against hearing defender attenuation curves—targeting 70–80 dB(A) at the ear.",
   },
   {
     number: "03",
@@ -145,10 +145,10 @@ export default function PhysicalAgentsNoisePage() {
               <strong className="font-medium text-stone-200">
                 BS EN ISO 9612
               </strong>
-              . Using Class 1 real-time 1/1 octave-band analysers and personal
-              dosimeters, we quantify daily exposure (L<sub>EP,d</sub>), peak
-              sound pressure (L<sub>CPeak</sub>), and engineer practical source
-              attenuation before relying on hearing protection.
+              . Using Class 1 real-time 1/1 octave-band analysers and Class 2 personal
+              dosimeters, I quantify daily exposure (L<sub>EP,d</sub>), peak
+              sound pressure (L<sub>CPeak</sub>), and assess practical source
+              attenuation options to minimise reliance on hearing protection.
             </p>
 
             {/* Key Parameter Callout Strip */}
@@ -305,7 +305,7 @@ export default function PhysicalAgentsNoisePage() {
             Standards &amp; Compliance Architecture
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-stone-400">
-            Every workplace noise assessment is conducted by a BOHS CertOH
+            Workplace noise assessments are conducted by a minimum BOHS CertOH
             qualified occupational hygienist in strict alignment with UK HSE
             guidance L108 and international acoustic standards.
           </p>
