@@ -178,7 +178,7 @@ export default function RiskManagementPage() {
                       <span className="leading-snug">{item.title}</span>
                     </h3>
                     <span
-                      className={`w-56 shrink-0 rounded border px-2.5 py-1 text-center text-[11px] leading-tight font-medium ${item.accent}`}
+                      className={`w-64 shrink-0 whitespace-nowrap rounded border px-2.5 py-1 text-center text-[10.5px] leading-tight font-medium ${item.accent}`}
                     >
                       {item.subtitle}
                     </span>
