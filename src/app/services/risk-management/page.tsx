@@ -170,18 +170,22 @@ export default function RiskManagementPage() {
                   key={item.step}
                   className="rounded-lg border border-stone-800/90 bg-[#0f1012] p-4 transition-colors hover:border-[#876441]/60"
                 >
-                  <div className="flex items-baseline justify-between gap-2">
-                    <h3 className="text-sm font-semibold tracking-wide text-stone-100 uppercase">
-                      <span className="mr-2 font-mono text-[#d4af37]">{item.step}.</span>
-                      {item.title}
+                  <div className="grid grid-cols-[1fr_auto] items-start gap-3">
+                    <h3 className="flex items-start text-sm font-semibold tracking-wide text-stone-100 uppercase">
+                      <span className="w-7 shrink-0 font-mono text-[#d4af37]">
+                        {item.step}.
+                      </span>
+                      <span className="leading-snug">{item.title}</span>
                     </h3>
                     <span
-                      className={`rounded border px-2 py-0.5 text-[11px] font-medium ${item.accent}`}
+                      className={`w-56 shrink-0 rounded border px-2.5 py-1 text-center text-[11px] leading-tight font-medium ${item.accent}`}
                     >
                       {item.subtitle}
                     </span>
                   </div>
-                  <p className="mt-2 text-xs leading-relaxed text-stone-400">{item.description}</p>
+                  <p className="mt-2.5 pl-7 text-xs leading-relaxed text-stone-400">
+                    {item.description}
+                  </p>
                 </div>
               ))}
             </div>
