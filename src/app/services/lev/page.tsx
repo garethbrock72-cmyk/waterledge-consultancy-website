@@ -134,13 +134,13 @@ export default function LEVServicePage() {
 
               <ul className="mt-6 space-y-2 text-xs text-stone-300 font-mono">
                 <li className="flex items-center gap-2.5">
-                  <span className="text-emerald-400">&check;</span> Effective containment and inward capture velocity at source
+                  <span className="text-emerald-400">✓</span> Effective containment and inward capture velocity at source
                 </li>
                 <li className="flex items-center gap-2.5">
-                  <span className="text-emerald-400">&check;</span> Operator breathing zone protected from rising vapour path
+                  <span className="text-emerald-400">✓</span> Operator breathing zone protected from rising vapour path
                 </li>
                 <li className="flex items-center gap-2.5">
-                  <span className="text-emerald-400">&check;</span> Automated stirrer prevents manual leaning over open vessel
+                  <span className="text-emerald-400">✓</span> Automated stirrer prevents manual leaning over open vessel
                 </li>
               </ul>
             </div>
