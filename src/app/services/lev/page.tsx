@@ -74,11 +74,11 @@ export default function LEVServicePage() {
           </div>
 
           <p className="text-lg sm:text-xl text-stone-300 font-serif italic leading-relaxed font-light">
-            Statutory Thorough Examination and Testing (TExT), commissioning verification, and aerodynamic capture profiling conducted by a BOHS Certificate of Competence in Control holder.
+            Statutory Thorough Examination and Testing (TExT), commissioning verification, and performance evaluation conducted by a BOHS Certificate of Competence in Control holder.
           </p>
 
           <p className="text-stone-400 text-sm sm:text-base leading-relaxed font-light">
-            Statutory Thorough Examination and Testing (TExT) compliant with <strong>HSE HSG 258</strong> and <strong>COSHH Regulation 9</strong>. We deliver quantitative aerodynamic assessments, capture velocity profiling, static pressure diagnostics, and engineering control validation for industrial extraction systems.
+            Statutory Thorough Examination and Testing (TExT) compliant with <strong>HSE HSG 258</strong> and <strong>COSHH Regulation 9</strong>. I can deliver quantitative and qualitative assessments for local exhaust ventilation systems to verify COSHH compliance.
           </p>
         </section>
 
@@ -95,7 +95,7 @@ export default function LEVServicePage() {
               Engineering Control Comparison: Volatile Vapour Release from Small-Scale Mixing
             </h2>
             <p className="text-stone-400 text-sm sm:text-base font-light leading-relaxed">
-              Comparing a theoretical concept for effective Local Exhaust Ventilation (LEV) control of volatile vapour release against a similar but ineffective overhead canopy design. All LEV systems require expert engineering design input and tailored aerodynamic evaluation.
+              Comparing a theoretical concept for effective Local Exhaust Ventilation (LEV) control of volatile vapour release against a similar but ineffective design. All LEV systems require expert engineering design input and tailored aerodynamic evaluation.
             </p>
           </div>
 
@@ -117,7 +117,7 @@ export default function LEVServicePage() {
                   Rim-Slot Hood &amp; Mechanical Agitation
                 </h3>
                 <p className="text-sm text-stone-400 font-light mt-2 mb-6 leading-relaxed">
-                  Enclosing rim-slot hood with increased freeboard height and lidded aperture to minimise cross-draught disturbance and capture vapour laterally before it rises.
+                  Enclosing rim-slot hood with increased freeboard height to minimise cross-draught disturbance to contain and capture vapour laterally before it rises.
                 </p>
               </div>
 
@@ -157,10 +157,10 @@ export default function LEVServicePage() {
                   </span>
                 </div>
                 <h3 className="text-2xl font-serif font-light text-stone-100">
-                  Ineffective High-Canopy Extraction
+                  Ineffective Rim Slot Extraction
                 </h3>
                 <p className="text-sm text-stone-400 font-light mt-2 mb-6 leading-relaxed">
-                  High overhead canopy hood draws fugitive solvent vapour directly through the operator&apos;s breathing zone and loses capture envelope due to rapid velocity decay.
+                  Rim slot design flaws leading to fugitive solvent vapour release and risk of entering the operator&apos;s breathing zone.
                 </p>
               </div>
 
@@ -179,7 +179,7 @@ export default function LEVServicePage() {
                   <span className="text-rose-400">&#10005;</span> Fugitive loss of vapour control due to cross-draughts
                 </li>
                 <li className="flex items-center gap-2.5">
-                  <span className="text-rose-400">&#10005;</span> Contaminant plume drawn directly past operator breathing zone
+                  <span className="text-rose-400">&#10005;</span> Contaminant plume may enter operative breathing zone
                 </li>
                 <li className="flex items-center gap-2.5">
                   <span className="text-rose-400">&#10005;</span> Over-reliance on RPE which fails to danger condition
