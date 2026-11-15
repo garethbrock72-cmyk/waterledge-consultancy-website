@@ -212,7 +212,7 @@ export default function PhysicalAgentsThermalPage() {
           {/* Full-Width CAD Blueprint Graphic Below */}
           <div className="w-full">
             <div className="overflow-hidden rounded-sm border border-stone-800 bg-[#0c0d0e] p-3 shadow-2xl sm:p-4">
-              <div className="relative aspect-square w-full overflow-hidden rounded-sm border border-stone-800/60 bg-[#0c0d0e]">
+              <div className="relative aspect-video w-full overflow-hidden rounded-sm border border-stone-800/60 bg-[#0c0d0e]">
                 <Image
                   src="/images/Thermal.webp"
                   alt="Occupational Hygiene Thermal Risk and WBGT Heat Stress Measurement Blueprint (BS EN ISO 7243 and ISO 9886)"

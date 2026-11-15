@@ -379,7 +379,7 @@ export default function Home() {
               <span className="px-4 py-2 border border-stone-700 text-stone-300 font-mono text-[11px] tracking-wider uppercase">
                 CertOH
               </span>
-              <span className="px-4 py-2 border border-stone-700 text-stone-300 font-mono text-[11px] tracking-wider uppercase">
+              <span className="px-4 py-2 border border-stone-700 text-stone-300 font-mono text-[11px] tracking-wider">
                 CoC (Control)
               </span>
               <span 
@@ -416,7 +416,7 @@ export default function Home() {
                 CoC (Control)
               </h3>
               <p className="text-xs text-stone-400 tracking-wide uppercase font-medium">
-                Competence in Engineering Control
+                Competence in Control of the Working Environment
               </p>
               <p className="text-stone-400 text-xs sm:text-sm leading-relaxed font-light pt-2">
                 Specialist credential governing the design appraisal, aerodynamic performance testing, and specification of LEV extraction systems.
