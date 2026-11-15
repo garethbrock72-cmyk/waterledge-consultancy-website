@@ -146,9 +146,9 @@ export default function PhysicalAgentsNoisePage() {
                 BS EN ISO 9612
               </strong>
               . Using Class 1 real-time 1/1 octave-band analysers and personal
-              dosimeters, we quantify daily exposure (L<sub>EP,d</sub>), peak
-              sound pressure (L<sub>CPeak</sub>), and engineer practical source
-              attenuation before relying on hearing protection.
+              dosimeters, I quantify daily exposure (L<sub>EP,d</sub>), peak
+              sound pressure (L<sub>CPeak</sub>), and assess practical source
+              attenuation options to avoid or minimise reliance on hearing protection.
             </p>
 
             {/* Key Parameter Callout Strip */}
@@ -272,7 +272,7 @@ export default function PhysicalAgentsNoisePage() {
               </div>
               <p className="mt-3 text-xs leading-relaxed text-stone-400">
                 Triggers mandatory engineering noise reduction programmes,
-                demarcated Hearing Protection Zones, mandatory HPD use, and
+                demarcated Hearing Protection Zones, mandatory Hearing Protection use, and
                 audiometric health surveillance.
               </p>
             </div>
