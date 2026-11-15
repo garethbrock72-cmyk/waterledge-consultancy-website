@@ -105,7 +105,7 @@ export default function Home() {
             Consultancy Services
           </h2>
           <p className="text-stone-400 text-sm sm:text-base font-light leading-relaxed">
-            COSHH exposure evaluations, personal sampling campaigns, and physical agent testing performed strictly to recognised UK and European standards.
+            Comprehensive health risk assessments, COSHH exposure evaluations, personal sampling campaigns, and physical agent testing performed strictly to recognised UK and European standards.
           </p>
         </div>
 
@@ -247,8 +247,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Service 05 - Occupational Hygiene Personal Sampling (Full-Width Card) */}
-          <div className="group p-8 sm:p-10 bg-[#0f1012] border border-stone-800/80 hover:border-[#d4af37]/60 transition duration-300 flex flex-col justify-between md:col-span-2">
+          {/* Service 05 - Occupational Hygiene Personal Sampling (Resized to Standard 1-Column Card) */}
+          <div className="group p-8 sm:p-10 bg-[#0f1012] border border-stone-800/80 hover:border-[#d4af37]/60 transition duration-300 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-6">
                 <span className="font-mono text-xs text-[#d4af37] tracking-[0.2em] uppercase">
@@ -263,8 +263,8 @@ export default function Home() {
                 Occupational Hygiene Personal Sampling
               </h3>
               
-              <p className="text-stone-400 text-sm leading-relaxed font-light mb-8 max-w-4xl">
-                Quantitative personal exposure monitoring across breathing and hearing zones alongside systemic biological uptake. Includes gravimetric &amp; sorbent air sampling (BS EN 689 / ISO 13137), cable-free personal noise dosimetry (IEC 61252 / BS EN ISO 9612), dermal &amp; surface wipe testing, and UKAS-accredited biological monitoring such as post-shift urinalysis for isocyanates against EH40 Biological Monitoring Guidance Values (BMGVs).
+              <p className="text-stone-400 text-sm leading-relaxed font-light mb-8">
+                Quantitative personal exposure monitoring across breathing and hearing zones alongside systemic biological uptake. Includes gravimetric &amp; sorbent air sampling (BS EN 689), cable-free noise dosimetry (BS EN ISO 9612), dermal testing, and UKAS-accredited urinalysis against EH40 BMGVs.
               </p>
             </div>
 
@@ -275,6 +275,71 @@ export default function Home() {
               >
                 Explore Personal Sampling &rarr;
               </Link>
+            </div>
+          </div>
+
+          {/* Service 06 - Health Risk Assessment (New Card) */}
+          <div className="group p-8 sm:p-10 bg-[#0f1012] border border-stone-800/80 hover:border-[#d4af37]/60 transition duration-300 flex flex-col justify-between">
+            <div>
+              <div className="flex items-center justify-between mb-6">
+                <span className="font-mono text-xs text-[#d4af37] tracking-[0.2em] uppercase">
+                  06 // Holistic Appraisal
+                </span>
+                <span className="font-mono text-[11px] uppercase tracking-wider text-stone-400 border border-stone-800 px-2.5 py-0.5">
+                  MHSWR 1999 &bull; Multi-Agent
+                </span>
+              </div>
+              
+              <h3 className="text-2xl font-serif font-light text-stone-100 mb-3 tracking-wide">
+                Health Risk Assessment
+              </h3>
+              
+              <p className="text-stone-400 text-sm leading-relaxed font-light mb-6">
+                Integrated workplace health risk evaluations uniting chemical (COSHH), physical (noise, vibration, thermal), biological, and ergonomic stressors into a structured Similar Exposure Group (SEG) risk profile and prioritised control roadmap.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <div>
+                <Link
+                  href="/services/health-risk-assessment"
+                  className="inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.22em] uppercase text-stone-300 hover:text-[#d4af37] transition"
+                >
+                  Explore Total HRA Methodology &rarr;
+                </Link>
+              </div>
+              <div className="pt-3 border-t border-stone-800/80 flex flex-wrap gap-2">
+                <Link
+                  href="/services/coshh-exposure-assessment"
+                  className="px-3 py-1.5 bg-[#0c0d0e] border border-stone-800 hover:border-[#d4af37] text-[10px] font-medium tracking-[0.16em] uppercase text-stone-200 hover:text-[#d4af37] transition"
+                >
+                  COSHH &rarr;
+                </Link>
+                <Link
+                  href="/services/physical-agents-noise"
+                  className="px-3 py-1.5 bg-[#0c0d0e] border border-stone-800 hover:border-[#d4af37] text-[10px] font-medium tracking-[0.16em] uppercase text-stone-200 hover:text-[#d4af37] transition"
+                >
+                  Noise &rarr;
+              </Link>
+                <Link
+                  href="/services/physical-agents-vibration"
+                  className="px-3 py-1.5 bg-[#0c0d0e] border border-stone-800 hover:border-[#d4af37] text-[10px] font-medium tracking-[0.16em] uppercase text-stone-200 hover:text-[#d4af37] transition"
+                >
+                  Vibration &rarr;
+                </Link>
+                <Link
+                  href="/services/physical-agents-thermal"
+                  className="px-3 py-1.5 bg-[#0c0d0e] border border-stone-800 hover:border-[#d4af37] text-[10px] font-medium tracking-[0.16em] uppercase text-stone-200 hover:text-[#d4af37] transition"
+                >
+                  Thermal &rarr;
+                </Link>
+                <Link
+                  href="/services/health-risk-assessment#ergonomics"
+                  className="px-3 py-1.5 bg-[#0c0d0e] border border-stone-800 hover:border-[#d4af37] text-[10px] font-medium tracking-[0.16em] uppercase text-stone-200 hover:text-[#d4af37] transition"
+                >
+                  Ergonomics &rarr;
+                </Link>
+              </div>
             </div>
           </div>
 
