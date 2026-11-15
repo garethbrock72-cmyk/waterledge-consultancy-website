@@ -14,13 +14,13 @@ const coreStandards = [
     code: "CNWR 2005 (HSE L108)",
     title: "Control of Noise at Work",
     summary:
-      "Statutory compliance assessments against Lower and Upper Exposure Action/Limit Values (80 dB(A) / 85 dB(A) / 87 dB(A) LEP,d) and Peak Action Values (135 dB(C) / 137 dB(C) / 140 dB(C)LCPeak).",
+      "Statutory compliance assessments against Lower and Upper Exposure Action Values (80 / 85 dB(A) LEP,d; 135 / 137 dB(C) LCPeak) and Exposure Limit Values (87 dB(A) / 140 dB(C)).",
   },
   {
     code: "BS EN ISO 9612",
     title: "Acoustic Determination of Exposure",
     summary:
-      "Precision task-based, job-based, and full-day measurement strategies with expanded uncertainty (U) calculations for daily (LEP,d) and weekly (LEP,w) noise exposure.",
+      "Precision task-based, job-based, and full-day measurement strategies with rigorous expanded uncertainty (U) calculations for daily (LEP,d) and weekly (LEP,w) noise exposure.",
   },
   {
     code: "BS EN 61672-1 (Class 1)",
@@ -47,7 +47,7 @@ const deliverables = [
     number: "02",
     title: "1/1 Octave-Band Spectral Analysis & BS EN 458",
     description:
-      "Octave-band frequency breakdown to match dominant tonal and broadband acoustic energy against hearing defender attenuation curves—targeting 70–80 dB(A) at the ear.",
+      "Full 16 Hz to 16 kHz octave-band frequency breakdown to match dominant tonal and broadband acoustic energy against hearing defender attenuation curves—targeting 70–80 dB(A) at the ear.",
   },
   {
     number: "03",
@@ -116,9 +116,9 @@ export default function PhysicalAgentsNoisePage() {
           </span>
         </div>
 
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:items-start">
-          {/* Left Column: Editorial Narrative */}
-          <div className="lg:col-span-6">
+        <div className="flex flex-col gap-12">
+          {/* Full-Width Top Header & Editorial Narrative */}
+          <div className="w-full">
             <p className="mb-3 text-xs font-semibold tracking-[0.25em] uppercase text-stone-400">
               Occupational Hygiene • Physical Agents
             </p>
@@ -135,7 +135,7 @@ export default function PhysicalAgentsNoisePage() {
               irreversible Noise-Induced Hearing Loss (NIHL) and tinnitus.
             </p>
 
-            <p className="mt-4 text-sm leading-relaxed text-stone-400">
+            <p className="mt-4 text-sm leading-relaxed text-stone-400 sm:text-base">
               Waterledge Consultancy conducts precision occupational noise
               assessments under the{" "}
               <strong className="font-medium text-stone-200">
@@ -145,14 +145,14 @@ export default function PhysicalAgentsNoisePage() {
               <strong className="font-medium text-stone-200">
                 BS EN ISO 9612
               </strong>
-              . Using Class 1 real-time 1/1 octave-band analysers and Class 2 personal
-              dosimeters, I quantify daily exposure (L<sub>EP,d</sub>), peak
-              sound pressure (L<sub>CPeak</sub>), and assess practical source
-              attenuation options to minimise reliance on hearing protection.
+              . Using Class 1 real-time 1/1 octave-band analysers and personal
+              dosimeters, we quantify daily exposure (L<sub>EP,d</sub>), peak
+              sound pressure (L<sub>CPeak</sub>), and engineer practical source
+              attenuation before relying on hearing protection.
             </p>
 
             {/* Key Parameter Callout Strip */}
-            <div className="mt-8 grid grid-cols-3 gap-4 border-y border-stone-800/90 py-5">
+            <div className="mt-8 grid grid-cols-1 gap-6 border-y border-stone-800/90 py-5 sm:grid-cols-3">
               <div>
                 <div className="font-mono text-xs uppercase tracking-widest text-[#d4af37]">
                   ISO 9612
@@ -164,7 +164,7 @@ export default function PhysicalAgentsNoisePage() {
                   Uncertainty-validated
                 </div>
               </div>
-              <div className="border-l border-stone-800/80 pl-4">
+              <div className="sm:border-l sm:border-stone-800/80 sm:pl-6">
                 <div className="font-mono text-xs uppercase tracking-widest text-[#d4af37]">
                   IEC 61672-1
                 </div>
@@ -175,7 +175,7 @@ export default function PhysicalAgentsNoisePage() {
                   16 Hz – 16 kHz spectrum
                 </div>
               </div>
-              <div className="border-l border-stone-800/80 pl-4">
+              <div className="sm:border-l sm:border-stone-800/80 sm:pl-6">
                 <div className="font-mono text-xs uppercase tracking-widest text-[#d4af37]">
                   BS EN 458
                 </div>
@@ -205,20 +205,20 @@ export default function PhysicalAgentsNoisePage() {
             </div>
           </div>
 
-          {/* Right Column: CAD Blueprint Graphic */}
-          <div className="lg:col-span-6">
-            <div className="overflow-hidden rounded-sm border border-stone-800 bg-[#0c0d0e] p-2 shadow-2xl">
+          {/* Full-Width CAD Blueprint Graphic Below */}
+          <div className="w-full">
+            <div className="overflow-hidden rounded-sm border border-stone-800 bg-[#0c0d0e] p-3 shadow-2xl sm:p-4">
               <div className="relative aspect-square w-full overflow-hidden rounded-sm border border-stone-800/60 bg-[#0c0d0e]">
                 <Image
                   src="/images/noise-exposure-assessment.webp"
                   alt="Occupational Hygiene Workplace Noise Exposure Assessment and Class 1 Octave Band Analysis Blueprint (BS EN ISO 9612 and IEC 61672-1)"
                   fill
                   priority
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  sizes="100vw"
                   className="object-contain"
                 />
               </div>
-              <div className="mt-2 flex items-center justify-between px-2 py-1 text-[11px] tracking-wider uppercase text-stone-400">
+              <div className="mt-3 flex flex-wrap items-center justify-between gap-2 px-2 py-1 text-xs tracking-wider uppercase text-stone-400">
                 <span>Fig 1.0 — Class 1 On-Axis SLM &amp; 1/1 Octave Breakdown</span>
                 <span className="font-mono text-[#d4af37]">
                   BS EN ISO 9612 / IEC 61672-1
@@ -229,13 +229,13 @@ export default function PhysicalAgentsNoisePage() {
         </div>
       </section>
 
-      {/* STATUTORY ACTION LEVELS & FORMULATION BANNER */}
+      {/* STATUTORY ACTION & LIMIT VALUES BANNER */}
       <section className="border-y border-stone-800/80 bg-[#101215] py-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
             <div>
               <p className="text-xs font-semibold tracking-[0.24em] uppercase text-[#d4af37]">
-                Statutory Thresholds &amp; Energetic Averaging
+                Statutory Action &amp; Limit Thresholds
               </p>
               <h2 className="mt-2 font-serif text-2xl text-stone-100 sm:text-3xl">
                 UK Control of Noise at Work Regulations 2005 Criteria
@@ -279,16 +279,15 @@ export default function PhysicalAgentsNoisePage() {
 
             <div className="rounded-sm border border-stone-800 bg-[#0c0d0e] p-6">
               <div className="text-xs font-semibold tracking-[0.18em] uppercase text-[#d4af37]">
-                Daily Exposure Formulation (ISO 9612)
+                Exposure Limit Values (ELV)
               </div>
               <div className="mt-3 font-mono text-lg font-semibold text-stone-100">
-                L<sub>EP,d</sub> = L<sub>Aeq,Te</sub> + 10 log<sub>10</sub>(T
-                <sub>e</sub> / T<sub>0</sub>)
+                L<sub>EP,d</sub> = 87 dB(A) • L<sub>CPeak</sub> = 140 dB(C)
               </div>
               <p className="mt-3 text-xs leading-relaxed text-stone-400">
-                Combines task-specific equivalent continuous sound pressure
-                levels (L<sub>Aeq,Te</sub>) over effective duration T
-                <sub>e</sub> against the 87 dB(A) Exposure Limit Value.
+                Statutory maximum at-ear exposure that must not be exceeded,
+                accounting for hearing protection attenuation (BS EN 458) worn
+                by the operative.
               </p>
             </div>
           </div>
@@ -305,7 +304,7 @@ export default function PhysicalAgentsNoisePage() {
             Standards &amp; Compliance Architecture
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-stone-400">
-            Workplace noise assessments are conducted by a minimum BOHS CertOH
+            Every workplace noise assessment is conducted by a BOHS CertOH
             qualified occupational hygienist in strict alignment with UK HSE
             guidance L108 and international acoustic standards.
           </p>
