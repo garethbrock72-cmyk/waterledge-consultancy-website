@@ -66,8 +66,8 @@ const deliverables = [
 export default function PhysicalAgentsThermalPage() {
   return (
     <main className="min-h-screen bg-[#0c0d0e] text-stone-200 selection:bg-[#d4af37]/30 selection:text-stone-100">
-     {/* Subtle Top Border Line */}
-<div className="h-px w-full bg-linear-to-r from-transparent via-[#d4af37]/40 to-transparent" />
+      {/* Subtle Top Border Line */}
+      <div className="h-px w-full bg-linear-to-r from-transparent via-[#d4af37]/40 to-transparent" />
 
       {/* HERO SECTION */}
       <section className="relative mx-auto max-w-7xl px-6 pt-14 pb-16 lg:px-8 lg:pt-20">
@@ -116,9 +116,9 @@ export default function PhysicalAgentsThermalPage() {
           </span>
         </div>
 
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:items-start">
-          {/* Left Column: Editorial Narrative */}
-          <div className="lg:col-span-6">
+        <div className="flex flex-col gap-12">
+          {/* Full-Width Top Header & Editorial Narrative */}
+          <div className="w-full">
             <p className="mb-3 text-xs font-semibold tracking-[0.25em] uppercase text-stone-400">
               Occupational Hygiene • Physical Agents
             </p>
@@ -136,7 +136,7 @@ export default function PhysicalAgentsThermalPage() {
               limits.
             </p>
 
-            <p className="mt-4 text-sm leading-relaxed text-stone-400">
+            <p className="mt-4 text-sm leading-relaxed text-stone-400 sm:text-base">
               Waterledge Consultancy delivers quantitative thermal risk
               surveys engineered around{" "}
               <strong className="font-medium text-stone-200">
@@ -156,7 +156,7 @@ export default function PhysicalAgentsThermalPage() {
             </p>
 
             {/* Key Parameter Callout Strip */}
-            <div className="mt-8 grid grid-cols-3 gap-4 border-y border-stone-800/90 py-5">
+            <div className="mt-8 grid grid-cols-1 gap-6 border-y border-stone-800/90 py-5 sm:grid-cols-3">
               <div>
                 <div className="font-mono text-xs uppercase tracking-widest text-[#d4af37]">
                   ISO 7243
@@ -168,7 +168,7 @@ export default function PhysicalAgentsThermalPage() {
                   Tnwb, Tg &amp; Ta arrays
                 </div>
               </div>
-              <div className="border-l border-stone-800/80 pl-4">
+              <div className="sm:border-l sm:border-stone-800/80 sm:pl-6">
                 <div className="font-mono text-xs uppercase tracking-widest text-[#d4af37]">
                   ISO 9886
                 </div>
@@ -179,7 +179,7 @@ export default function PhysicalAgentsThermalPage() {
                   Non-invasive physiological
                 </div>
               </div>
-              <div className="border-l border-stone-800/80 pl-4">
+              <div className="sm:border-l sm:border-stone-800/80 sm:pl-6">
                 <div className="font-mono text-xs uppercase tracking-widest text-[#d4af37]">
                   ISO 7933
                 </div>
@@ -209,20 +209,20 @@ export default function PhysicalAgentsThermalPage() {
             </div>
           </div>
 
-          {/* Right Column: CAD Blueprint Graphic */}
-          <div className="lg:col-span-6">
-            <div className="overflow-hidden rounded-sm border border-stone-800 bg-[#0c0d0e] p-2 shadow-2xl">
+          {/* Full-Width CAD Blueprint Graphic Below */}
+          <div className="w-full">
+            <div className="overflow-hidden rounded-sm border border-stone-800 bg-[#0c0d0e] p-3 shadow-2xl sm:p-4">
               <div className="relative aspect-square w-full overflow-hidden rounded-sm border border-stone-800/60 bg-[#0c0d0e]">
                 <Image
                   src="/images/Thermal.webp"
                   alt="Occupational Hygiene Thermal Risk and WBGT Heat Stress Measurement Blueprint (BS EN ISO 7243 and ISO 9886)"
                   fill
                   priority
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  sizes="100vw"
                   className="object-contain"
                 />
               </div>
-              <div className="mt-2 flex items-center justify-between px-2 py-1 text-[11px] tracking-wider uppercase text-stone-400">
+              <div className="mt-3 flex flex-wrap items-center justify-between gap-2 px-2 py-1 text-xs tracking-wider uppercase text-stone-400">
                 <span>Fig 1.0 — Radiant Furnace &amp; WBGT Sensor Array</span>
                 <span className="font-mono text-[#d4af37]">
                   BS EN ISO 7243 / ISO 9886
