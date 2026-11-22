@@ -78,6 +78,57 @@ const governancePillars = [
   },
 ];
 
+const isoProcessAlignment = [
+  {
+    clause: "Clause 6.3",
+    isoStage: "Scope, Context & Criteria",
+    hygieneApplication:
+      "Defining Similar Exposure Groups (SEGs), operational context, and statutory risk criteria (EH40 WELs, Noise/Vibration EAVs & ELVs, ALARP thresholds) that supersede pure cost-benefit trade-offs.",
+  },
+  {
+    clause: "Clause 6.4",
+    isoStage: "Risk Assessment",
+    hygieneApplication:
+      "Hazard identification, qualitative/quantitative exposure analysis (BS EN 689, ISO 9612, ISO 5349), and evaluation of inherent vs. residual risk with explicit statistical confidence.",
+  },
+  {
+    clause: "Clause 6.5",
+    isoStage: "Risk Treatment",
+    hygieneApplication:
+      "Applying the 5-tier Hierarchy of Control to modify risk at source—paired with structured treatment plans, named control owners, and checks against unintended secondary hazards.",
+  },
+  {
+    clause: "Clause 6.6",
+    isoStage: "Monitoring & Review",
+    hygieneApplication:
+      "Distinguishing routine monitoring (air/noise sampling, LEV TExT, lead indicators) from periodic review of control validity as processes, materials, or legislation change.",
+  },
+  {
+    clause: "Clauses 6.2 & 6.7",
+    isoStage: "Consultation, Recording & Reporting",
+    hygieneApplication:
+      "Workforce consultation to capture human and cultural factors, backed by auditable risk registers and board-ready assurance reporting integrated into client management systems.",
+  },
+];
+
+const integrationPillars = [
+  {
+    tag: "BS 31100 • Specialist Instance",
+    title: "Embedded, Not Siloed",
+    body: "Structured as a dedicated operational instance of your corporate risk process—connecting shop-floor exposure control directly to project change management, ISO 45001/9001 systems, and board oversight.",
+  },
+  {
+    tag: "BS ISO 31000 • Clause 4 Principles",
+    title: "Best Available Information",
+    body: "Grounded in empirical measurement, documented assumptions, and human factors rather than generic risk matrices—protecting workforce health while creating defensible organisational value.",
+  },
+  {
+    tag: "ISO/TR 31004 • Governance & Assurance",
+    title: "Clear Ownership & Residual Risk",
+    body: "Assigns explicit risk and control ownership, tracks lead and lag performance indicators, and formally documents retained residual risk so leadership decisions remain transparent and auditable.",
+  },
+];
+
 export default function RiskManagementPage() {
   return (
     <main className="min-h-screen bg-[#0c0d0e] text-stone-200 selection:bg-[#d4af37]/20 selection:text-[#d4af37]">
@@ -232,6 +283,94 @@ export default function RiskManagementPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Enterprise Risk Management Alignment (BS ISO 31000 / BS 31100 / ISO/TR 31004) */}
+      <section className="border-t border-stone-800/80 bg-[#0c0d0e] py-16 lg:py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold tracking-[0.22em] text-[#d4af37] uppercase">
+              Enterprise System Integration • BS ISO 31000:2018
+            </p>
+            <h2 className="mt-2 font-serif text-3xl font-semibold text-stone-100 sm:text-4xl">
+              Aligning Hygiene Practice with Corporate Risk Governance
+            </h2>
+            <p className="mt-4 text-sm leading-relaxed text-stone-400 sm:text-base">
+              Occupational hygiene is most effective when integrated into your wider management
+              framework rather than operated as an isolated compliance silo. Our methodology aligns
+              with <span className="text-stone-200">BS ISO 31000:2018</span>, supported by{" "}
+              <span className="text-stone-200">BS 31100</span> and{" "}
+              <span className="text-stone-200">PD ISO/TR 31004</span> implementation guidance, so
+              technical exposure data feeds seamlessly into client risk registers and executive
+              decision-making.
+            </p>
+          </div>
+
+          {/* 3-Column Integration Pillars */}
+          <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-3">
+            {integrationPillars.map((pillar) => (
+              <div
+                key={pillar.title}
+                className="rounded-xl border border-stone-800/90 bg-[#0f1012] p-6 transition-colors hover:border-[#876441]/70"
+              >
+                <span className="font-mono text-[11px] font-medium tracking-[0.16em] text-[#d4af37] uppercase">
+                  {pillar.tag}
+                </span>
+                <h3 className="mt-2 font-serif text-xl font-semibold text-stone-100">
+                  {pillar.title}
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-stone-400">{pillar.body}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Compact ISO 31000 Process Crosswalk Table */}
+          <div className="mt-12 overflow-hidden rounded-xl border border-stone-800/90 bg-[#0f1012]">
+            <div className="flex flex-wrap items-center justify-between gap-2 border-b border-stone-800/80 px-6 py-4">
+              <div className="flex items-center gap-2.5">
+                <span className="h-2 w-2 rounded-full bg-[#d4af37]" />
+                <span className="text-xs font-semibold tracking-[0.18em] text-stone-200 uppercase">
+                  BS ISO 31000:2018 Process Integration Crosswalk
+                </span>
+              </div>
+              <span className="font-mono text-[11px] tracking-wider text-stone-400">
+                ISO 31000 • BS 31100 • ISO/TR 31004 • ISO 45001
+              </span>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-sm">
+                <thead className="border-b border-stone-800/80 bg-[#0c0d0e]/70 text-[11px] font-mono tracking-[0.16em] text-stone-400 uppercase">
+                  <tr>
+                    <th className="px-6 py-3.5 font-medium whitespace-nowrap">ISO 31000 Ref</th>
+                    <th className="px-6 py-3.5 font-medium whitespace-nowrap">Process Element</th>
+                    <th className="px-6 py-3.5 font-medium">
+                      Occupational Hygiene Integration &amp; Client Deliverable
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-stone-800/70">
+                  {isoProcessAlignment.map((row) => (
+                    <tr
+                      key={row.clause}
+                      className="transition-colors hover:bg-stone-900/40"
+                    >
+                      <td className="px-6 py-4 align-top font-mono text-xs font-semibold whitespace-nowrap text-[#d4af37]">
+                        {row.clause}
+                      </td>
+                      <td className="px-6 py-4 align-top font-medium whitespace-nowrap text-stone-200">
+                        {row.isoStage}
+                      </td>
+                      <td className="px-6 py-4 align-top text-xs leading-relaxed text-stone-400 sm:text-sm">
+                        {row.hygieneApplication}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </section>
