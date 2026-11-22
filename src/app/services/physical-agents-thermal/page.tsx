@@ -260,20 +260,20 @@ export default function PhysicalAgentsThermalPage() {
           </div>
 
           {/* Stacked Full-Width Visual Appraisals */}
-          <div className="flex flex-col gap-8 w-full">
+          <div className="flex flex-col gap-10 w-full">
             {/* Fig 1.0 — Heat Stress Blueprint */}
-            <div className="overflow-hidden rounded-sm border border-stone-800 bg-[#0c0d0e] p-3 shadow-2xl sm:p-4">
-              <div className="relative aspect-square w-full max-h-[85vh] overflow-hidden rounded-sm border border-stone-800/60 bg-[#0c0d0e]">
+            <div className="overflow-hidden rounded-sm border border-stone-800 bg-[#0c0d0e] p-3 shadow-2xl sm:p-5">
+              <div className="relative w-full">
                 <Image
                   src="/images/Thermal-v3.webp"
                   alt="Occupational Hygiene Thermal Risk and WBGT Heat Stress Measurement Blueprint (BS EN ISO 7243 and ISO 9886)"
-                  fill
+                  width={2048}
+                  height={2048}
                   priority
-                  sizes="100vw"
-                  className="object-contain"
+                  className="w-full h-auto object-contain rounded-sm border border-stone-800/60"
                 />
               </div>
-              <div className="mt-3 flex flex-wrap items-center justify-between gap-2 px-2 py-1 text-xs tracking-wider uppercase text-stone-400">
+              <div className="mt-4 flex flex-wrap items-center justify-between gap-2 px-2 py-1 text-xs tracking-wider uppercase text-stone-400">
                 <span>Fig 1.0 — Radiant Furnace &amp; WBGT Sensor Array</span>
                 <span className="font-mono text-[#d4af37]">
                   BS EN ISO 7243 / ISO 9886 (HEAT)
@@ -282,7 +282,7 @@ export default function PhysicalAgentsThermalPage() {
             </div>
 
             {/* Sub-Zero Cold stress context paragraph */}
-            <div className="w-full border-t border-stone-800/80 pt-6">
+            <div className="w-full border-t border-stone-800/80 pt-8">
               <h2 className="font-serif text-2xl font-normal tracking-tight text-stone-100 sm:text-3xl">
                 Environmental &amp; PPE Assessment in{" "}
                 <span className="text-[#d4af37]">Sub-Zero Cold Stores</span>
@@ -299,18 +299,18 @@ export default function PhysicalAgentsThermalPage() {
             </div>
 
             {/* Fig 2.0 — Cold Stress Blueprint */}
-            <div className="overflow-hidden rounded-sm border border-stone-800 bg-[#0c0d0e] p-3 shadow-2xl sm:p-4">
-              <div className="relative aspect-square w-full max-h-[85vh] overflow-hidden rounded-sm border border-stone-800/60 bg-[#0c0d0e]">
+            <div className="overflow-hidden rounded-sm border border-stone-800 bg-[#0c0d0e] p-3 shadow-2xl sm:p-5">
+              <div className="relative w-full">
                 <Image
                   src="/images/Thermal-v4.webp"
                   alt="Occupational Hygiene Cold Risk Assessment and IREQ Cold Stress Blueprint (BS EN ISO 11079 and ISO 15743)"
-                  fill
+                  width={2048}
+                  height={2048}
                   priority
-                  sizes="100vw"
-                  className="object-contain"
+                  className="w-full h-auto object-contain rounded-sm border border-stone-800/60"
                 />
               </div>
-              <div className="mt-3 flex flex-wrap items-center justify-between gap-2 px-2 py-1 text-xs tracking-wider uppercase text-stone-400">
+              <div className="mt-4 flex flex-wrap items-center justify-between gap-2 px-2 py-1 text-xs tracking-wider uppercase text-stone-400">
                 <span>Fig 2.0 — Industrial Sub-Zero Cold Room &amp; Environmental Arrays</span>
                 <span className="font-mono text-[#d4af37]">
                   BS EN ISO 11079 / ISO 15743 (COLD)
