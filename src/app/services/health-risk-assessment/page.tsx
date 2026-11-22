@@ -75,7 +75,7 @@ export default function HealthRiskAssessmentPage() {
           {/* Direct Sub-Discipline Quick Navigation Bar */}
           <div className="pt-4 space-y-3">
             <span className="block font-mono text-[10px] tracking-[0.22em] uppercase text-stone-400">
-              Integrated Specialist Disciplines &amp; Sub-Pages
+              Integrated Specialist Disciplines &amp; Screening Scope
             </span>
             <div className="flex flex-wrap gap-2.5">
               <Link
@@ -106,7 +106,25 @@ export default function HealthRiskAssessmentPage() {
                 href="#ergonomics"
                 className="px-4 py-2.5 bg-[#0f1012] border border-stone-800 hover:border-[#d4af37] text-[11px] font-medium tracking-[0.18em] uppercase text-stone-200 hover:text-[#d4af37] transition"
               >
-                05. Ergonomics &amp; MSDs &darr;
+                05. Ergonomics &amp; Human Factors &darr;
+              </a>
+              <a
+                href="#radiation-emf"
+                className="px-4 py-2.5 bg-[#0f1012] border border-stone-800 hover:border-[#d4af37] text-[11px] font-medium tracking-[0.18em] uppercase text-stone-400 hover:text-[#d4af37] transition"
+              >
+                06. Radiation &amp; EMF (Screening) &darr;
+              </a>
+              <a
+                href="#legionella"
+                className="px-4 py-2.5 bg-[#0f1012] border border-stone-800 hover:border-[#d4af37] text-[11px] font-medium tracking-[0.18em] uppercase text-stone-400 hover:text-[#d4af37] transition"
+              >
+                07. Legionella (Screening) &darr;
+              </a>
+              <a
+                href="#asbestos"
+                className="px-4 py-2.5 bg-[#0f1012] border border-stone-800 hover:border-[#d4af37] text-[11px] font-medium tracking-[0.18em] uppercase text-stone-400 hover:text-[#d4af37] transition"
+              >
+                08. Asbestos (Screening) &darr;
               </a>
             </div>
           </div>
@@ -468,79 +486,212 @@ export default function HealthRiskAssessmentPage() {
                 <span className="font-mono text-[10px] text-stone-500 uppercase">
                   ISO 7243 &bull; ISO 7730
                 </span>
-              </div>
-            </div>
+              </div> {/* Closes Card 04 footer bar */}
+            </div> {/* Closes Card 04 only — grid stays open */}
 
-          </div>
+            {/* 05: Ergonomics & Human Factors */}
+            <div
+              id="ergonomics"
+          
+              className="p-8 sm:p-10 bg-[#0f1012] border border-stone-800/80 hover:border-[#d4af37]/60 transition duration-300 flex flex-col justify-between space-y-8 scroll-mt-32"
+            >
+              <div className="space-y-4">
+                <div className="flex items-center justify-between gap-3">
+                  <span className="font-mono text-xs text-[#d4af37] tracking-[0.2em] uppercase">
+                    Discipline 05 // Biomechanical &amp; Human Factors
+                  </span>
+                  <span className="font-mono text-[11px] uppercase tracking-wider text-stone-400 border border-stone-800 px-2.5 py-0.5 shrink-0">
+                    MHOR 1992 &bull; MAC &bull; ART
+                  </span>
+                </div>
 
-          {/* 05: Ergonomics & Human Factors (Full-Width Dedicated Section Card) */}
-          <div
-            id="ergonomics"
-            className="p-8 sm:p-12 bg-[#0f1012] border border-stone-800/80 hover:border-[#d4af37]/60 transition duration-300 space-y-8 scroll-mt-32"
-          >
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-stone-800/80 pb-6">
-              <div className="space-y-2">
-                <span className="font-mono text-xs text-[#d4af37] tracking-[0.2em] uppercase">
-                  Discipline 05 // Biomechanical &amp; Human Factors
-                </span>
-                <h3 className="text-2xl sm:text-3xl font-serif font-light text-stone-100">
-                  Workplace Ergonomics &amp; Musculoskeletal Disorder (MSD) Risk
+                <h3 className="text-2xl font-serif font-light text-stone-100">
+                  Workplace Ergonomics &amp; Human Factors
                 </h3>
-              </div>
-              <span className="font-mono text-[11px] uppercase tracking-wider text-stone-400 border border-stone-800 px-3 py-1 self-start md:self-auto">
-                MHOR 1992 &bull; MAC &bull; ART &bull; RAPP
-              </span>
-            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="space-y-3">
-                <h4 className="font-serif text-lg text-stone-100 font-light">
-                  Manual Handling &amp; Repetitive Tasks
-                </h4>
-                <p className="text-stone-400 text-xs sm:text-sm leading-relaxed font-light">
-                  Structured evaluation of lifting, carrying, pushing, pulling, and upper-limb repetitive assembly tasks using HSE Manual Handling Assessment Charts (MAC), Assessment of Repetitive Tasks (ART), and Risk Assessment of Pushing and Pulling (RAPP) methodologies, alongside RULA/REBA postural analysis.
+                <p className="text-stone-400 text-sm leading-relaxed font-light">
+                  Structured evaluation of manual handling, repetitive upper-limb tasks, workstation anthropometrics, and human-control interfaces using HSE MAC, ART, RAPP, and RULA/REBA screening methodologies.
                 </p>
+
+                <ul className="space-y-2 text-xs text-stone-300 font-light pt-2">
+                  <li className="flex items-start gap-2.5">
+                    <span className="text-[#d4af37] font-mono">&bull;</span>
+                    <span>
+                      <strong className="text-stone-100 font-medium">Engineering Control Usability:</strong> Integrates operator posture and line-of-sight with HSG 258 LEV hood design so controls support natural work patterns rather than prompting bypasses.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span className="text-[#d4af37] font-mono">&bull;</span>
+                    <span>
+                      <strong className="text-stone-100 font-medium">Physiological Uptake Link:</strong> Accounts for elevated metabolic load and pulmonary ventilation (from ~10 L/min at rest to &gt;40 L/min under heavy work), preventing underestimation of inhaled chemical dose and thermal strain.
+                    </span>
+                  </li>
+                </ul>
               </div>
 
-              <div className="space-y-3">
-                <h4 className="font-serif text-lg text-stone-100 font-light">
-                  Interaction with Engineering Controls
-                </h4>
-                <p className="text-stone-400 text-xs sm:text-sm leading-relaxed font-light">
-                  Ergonomics is directly coupled to exposure control efficacy. If an LEV capture hood requires awkward reaching or obstructs line-of-sight, operators will bypass it. Our HRA integrates workstation anthropometrics with HSG 258 hood positioning so extraction works with the operator&apos;s natural biomechanics.
-                </p>
-              </div>
-
-              <div className="space-y-3">
-                <h4 className="font-serif text-lg text-stone-100 font-light">
-                  Metabolic Load &amp; Physiological Uptake
-                </h4>
-                <p className="text-stone-400 text-xs sm:text-sm leading-relaxed font-light">
-                  Heavy manual handling elevates cardiopulmonary demand and pulmonary ventilation (from ~10 L/min at rest to &gt;40 L/min under heavy load), multiplying the inhaled dose of airborne contaminants and accelerating thermal strain. Evaluating ergonomics inside the HRA prevents underestimation of chemical and thermal risk.
-                </p>
-              </div>
-            </div>
-
-            <div className="pt-6 border-t border-stone-800/80 flex flex-wrap items-center justify-between gap-4">
-              <div className="flex flex-wrap gap-3">
+              <div className="pt-4 border-t border-stone-800/80 flex flex-wrap gap-3 items-center justify-between">
                 <Link
                   href="/services/risk-management"
-                  className="px-4 py-2 bg-[#0c0d0e] border border-stone-800 hover:border-[#d4af37] text-[10px] font-medium tracking-[0.18em] uppercase text-stone-200 hover:text-[#d4af37] transition"
+                  className="inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.22em] uppercase text-stone-200 hover:text-[#d4af37] transition"
                 >
-                  Explore Risk Governance &amp; Hierarchy of Control &rarr;
+                  Risk Governance &rarr;
                 </Link>
-                <Link
-                  href="/services/lev"
-                  className="px-4 py-2 bg-[#0c0d0e] border border-stone-800 hover:border-[#d4af37] text-[10px] font-medium tracking-[0.18em] uppercase text-stone-200 hover:text-[#d4af37] transition"
-                >
-                  Explore Ergonomic LEV Hood Design &rarr;
-                </Link>
+                <span className="font-mono text-[10px] text-stone-500 uppercase">
+                  MHOR 1992 &bull; HSG 60 &bull; INDG 171
+                </span>
               </div>
-              <span className="font-mono text-[10px] text-stone-500 uppercase">
-                MHOR 1992 &bull; HSG 60 &bull; INDG 171
-              </span>
             </div>
-          </div>
+
+            {/* 06: Ionising, Non-Ionising Radiation & EMF (Initial Screening) */}
+            <div
+              id="radiation-emf"
+              className="p-8 sm:p-10 bg-[#0f1012] border border-stone-800/80 hover:border-[#d4af37]/60 transition duration-300 flex flex-col justify-between space-y-8 scroll-mt-32"
+            >
+              <div className="space-y-4">
+                <div className="flex items-center justify-between gap-3">
+                  <span className="font-mono text-xs text-[#d4af37] tracking-[0.2em] uppercase">
+                    Discipline 06 // Radiation &amp; EMF Screening
+                  </span>
+                  <span className="font-mono text-[11px] uppercase tracking-wider text-stone-400 border border-stone-800 px-2.5 py-0.5 shrink-0">
+                    IRR17 &bull; CEMFAW 2016
+                  </span>
+                </div>
+
+                <h3 className="text-2xl font-serif font-light text-stone-100">
+                  Ionising, Non-Ionising Radiation &amp; EMF
+                </h3>
+
+                <p className="text-stone-400 text-sm leading-relaxed font-light">
+                  Walkthrough source screening within the HRA to identify whether ionising radiation (e.g., X-ray, gauges, NDT), artificial optical radiation (lasers, UV/IR welding arcs), or Electromagnetic Fields (EMF) from induction heating, resistance welding, or high-current plant are relevant to site SEGs.
+                </p>
+
+                <ul className="space-y-2 text-xs text-stone-300 font-light pt-2">
+                  <li className="flex items-start gap-2.5">
+                    <span className="text-[#d4af37] font-mono">&bull;</span>
+                    <span>
+                      <strong className="text-stone-100 font-medium">Preliminary Survey Scope:</strong> Identifies potential radiation or EMF emitters, flags active medical implant considerations, and checks whether existing statutory assessments are in place—does not replace quantitative measurement.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span className="text-[#d4af37] font-mono">&bull;</span>
+                    <span>
+                      <strong className="text-stone-100 font-medium">Specialist Referral:</strong> Where relevant sources are confirmed, we recommend appointing an accredited Radiation Protection Adviser (RPA), Laser Protection Adviser (LPA), or qualified EMF specialist for detailed statutory assessment.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="pt-4 border-t border-stone-800/80 flex items-center justify-between gap-3">
+                <span className="inline-flex items-center gap-2 font-mono text-[10px] tracking-[0.18em] uppercase text-[#d4af37]">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#d4af37]" />
+                  Initial Screening &amp; Specialist Referral
+                </span>
+                <span className="font-mono text-[10px] text-stone-500 uppercase">
+                  IRR17 &bull; CEMFAW &bull; AOR 2010
+                </span>
+              </div>
+            </div>
+
+            {/* 07: Legionella Risk Screening */}
+            <div
+              id="legionella"
+              className="p-8 sm:p-10 bg-[#0f1012] border border-stone-800/80 hover:border-[#d4af37]/60 transition duration-300 flex flex-col justify-between space-y-8 scroll-mt-32"
+            >
+              <div className="space-y-4">
+                <div className="flex items-center justify-between gap-3">
+                  <span className="font-mono text-xs text-[#d4af37] tracking-[0.2em] uppercase">
+                    Discipline 07 // Water Systems Screening
+                  </span>
+                  <span className="font-mono text-[11px] uppercase tracking-wider text-stone-400 border border-stone-800 px-2.5 py-0.5 shrink-0">
+                    ACOP L8 &bull; HSG 274
+                  </span>
+                </div>
+
+                <h3 className="text-2xl font-serif font-light text-stone-100">
+                  Legionella Risk Identification
+                </h3>
+
+                <p className="text-stone-400 text-sm leading-relaxed font-light">
+                  High-level walkthrough screening to identify water systems capable of generating inhalable aerosols—including cooling towers, evaporative condensers, humidifiers, process spray/wash systems, safety showers, and low-turnover domestic water circuits.
+                </p>
+
+                <ul className="space-y-2 text-xs text-stone-300 font-light pt-2">
+                  <li className="flex items-start gap-2.5">
+                    <span className="text-[#d4af37] font-mono">&bull;</span>
+                    <span>
+                      <strong className="text-stone-100 font-medium">Preliminary Survey Scope:</strong> Establishes whether Legionella risk systems are present across site operations and verifies whether a current site-specific risk assessment and written control scheme exist.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span className="text-[#d4af37] font-mono">&bull;</span>
+                    <span>
+                      <strong className="text-stone-100 font-medium">Specialist Referral:</strong> Does not constitute a formal ACOP L8 / BS 8580-1 water hygiene risk assessment; where risk systems or governance gaps are identified, we recommend a Legionella Control Association (LCA) registered specialist.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="pt-4 border-t border-stone-800/80 flex items-center justify-between gap-3">
+                <span className="inline-flex items-center gap-2 font-mono text-[10px] tracking-[0.18em] uppercase text-[#d4af37]">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#d4af37]" />
+                  Initial Screening &amp; Specialist Referral
+                </span>
+                <span className="font-mono text-[10px] text-stone-500 uppercase">
+                  ACOP L8 &bull; BS 8580-1
+                </span>
+              </div>
+            </div>
+
+            {/* 08: Asbestos Management Screening */}
+            <div
+              id="asbestos"
+              className="p-8 sm:p-10 bg-[#0f1012] border border-stone-800/80 hover:border-[#d4af37]/60 transition duration-300 flex flex-col justify-between space-y-8 scroll-mt-32"
+            >
+              <div className="space-y-4">
+                <div className="flex items-center justify-between gap-3">
+                  <span className="font-mono text-xs text-[#d4af37] tracking-[0.2em] uppercase">
+                    Discipline 08 // Building Fabric Screening
+                  </span>
+                  <span className="font-mono text-[11px] uppercase tracking-wider text-stone-400 border border-stone-800 px-2.5 py-0.5 shrink-0">
+                    CAR 2012 &bull; HSG 264
+                  </span>
+                </div>
+
+                <h3 className="text-2xl font-serif font-light text-stone-100">
+                  Asbestos Duty-to-Manage Screening
+                </h3>
+
+                <p className="text-stone-400 text-sm leading-relaxed font-light">
+                  Preliminary desktop and walkthrough review for pre-2000 non-domestic premises to determine whether potential Asbestos-Containing Materials (ACMs) or planned maintenance/plant installation works present an unmanaged exposure interface for operational SEGs.
+                </p>
+
+                <ul className="space-y-2 text-xs text-stone-300 font-light pt-2">
+                  <li className="flex items-start gap-2.5">
+                    <span className="text-[#d4af37] font-mono">&bull;</span>
+                    <span>
+                      <strong className="text-stone-100 font-medium">Preliminary Survey Scope:</strong> Verifies the existence and review currency of the site Asbestos Register and Management Plan (CAR 2012 Reg 4) without conducting physical sampling or intrusive inspection.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span className="text-[#d4af37] font-mono">&bull;</span>
+                    <span>
+                      <strong className="text-stone-100 font-medium">Specialist Referral:</strong> Where surveys are absent, outdated, or refurbishment/demolition works are planned, we recommend appointing a UKAS-accredited inspection body (ISO/IEC 17020) and BOHS P402-qualified surveyor.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="pt-4 border-t border-stone-800/80 flex items-center justify-between gap-3">
+                <span className="inline-flex items-center gap-2 font-mono text-[10px] tracking-[0.18em] uppercase text-[#d4af37]">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#d4af37]" />
+                  Initial Screening &amp; Specialist Referral
+                </span>
+                <span className="font-mono text-[10px] text-stone-500 uppercase">
+                  CAR 2012 &bull; HSG 264
+                </span>
+              </div> {/* 1. Closes Card 08 footer bar */}
+            </div> {/* 2. Closes Card 08 */}
+          </div> {/* 3. Closes the 2-column grid */}
         </section>
 
         <div className="h-px bg-stone-800/80 w-full" />
