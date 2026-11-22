@@ -4,9 +4,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Thermal Risk & Heat Stress Assessment | Waterledge Consultancy",
+  title: "Thermal Risk, Heat & Cold Stress Assessment | Waterledge Consultancy",
   description:
-    "BOHS-qualified occupational hygiene thermal environment and heat stress assessments across South West England, the Midlands, and London. BS EN ISO 7243 (WBGT), ISO 7933 (PHS), and ISO 9886 physiological strain monitoring.",
+    "BOHS-qualified occupational hygiene thermal environment, heat stress, and cold stress assessments across South West England, the Midlands, and London. BS EN ISO 7243 (WBGT), ISO 7933 (PHS), ISO 11079 (IREQ), ISO 15743, and ISO 9886 physiological strain monitoring.",
 };
 
 const coreStandards = [
@@ -23,16 +23,28 @@ const coreStandards = [
       "Analytical determination and interpretation of thermal stress through calculation of required sweat rate, core temperature trajectory, and maximum allowable exposure duration.",
   },
   {
+    code: "BS EN ISO 11079",
+    title: "IREQ Cold Stress Evaluation",
+    summary:
+      "Determination of Required Clothing Insulation (IREQmin / IREQneutral), Duration Limited Exposure (DLE), and convective wind chill effects (WCI) in sub-zero and chilled workplaces.",
+  },
+  {
+    code: "BS EN ISO 15743",
+    title: "Cold Workplaces & Risk Management",
+    summary:
+      "Structured occupational hygiene assessment, practices, and protective clothing management for sub-zero warehouse, chilled food production, and outdoor cold environments.",
+  },
+  {
     code: "BS EN ISO 9886",
     title: "Physiological Strain Monitoring",
     summary:
-      "Ergonomic evaluation of personal thermal strain using non-invasive tympanic temperature, heart rate recovery profiling, 4-point skin thermometry, and sweat loss assessment.",
+      "Ergonomic evaluation of personal heat and cold strain using non-invasive tympanic temperature, heart rate recovery profiling, 4-point and extremity skin thermometry.",
   },
   {
     code: "BS EN ISO 8996 & ISO 9920",
     title: "Metabolic Rate & Clothing Insulation",
     summary:
-      "Quantitative classification of task metabolic work rates (Light to Very Heavy) and thermal insulation/vapour permeability (clo) of specialist PPE and furnace garments.",
+      "Quantitative classification of task metabolic work rates (Light to Very Heavy) and thermal insulation/vapour permeability (clo) of PPE, insulated freezerwear, and furnace garments.",
   },
 ];
 
@@ -45,21 +57,33 @@ const deliverables = [
   },
   {
     number: "02",
-    title: "Task Metabolic & PPE Microclimate Analysis",
+    title: "Sub-Zero Cold Room & Air Velocity Logging",
     description:
-      "Time-weighted assessment of physical workload alongside evaluation of encapsulating or reflective aluminised PPE ensembles, quantifying effective WBGT clothing adjustment factors (CAF) and uncompensable heat stress thresholds.",
+      "Monitoring of sub-zero temperatures, Relative Humidity, and convective airflow (air velocity) at worker breathing and hand positions to quantify localised Wind Chill and air infiltration/movement.",
   },
   {
     number: "03",
-    title: "ACGIH TLV / Action Limit & Work-Rest Modelling",
+    title: "Task Metabolic & PPE Microclimate Analysis",
     description:
-      "Comparison of measured task WBGT profiles against ACGIH Threshold Limit Values (acclimatised) and Action Limits (unacclimatised) to engineer pragmatic, defensible hourly work-rest recovery schedules.",
+      "Time-weighted assessment of physical workload alongside evaluation of encapsulating/reflective PPE or insulated EN 342 freezerwear (including gloves EN 511), quantifying effective insulation factors (clo).",
   },
   {
     number: "04",
+    title: "ACGIH TLV / DLE & Warm-up Recovery Modelling",
+    description:
+      "Evaluation of measured environments against ACGIH Threshold Limit Values and calculating Duration Limited Exposure (DLE) alongside required hot or insulated warm-up recovery schedules.",
+  },
+  {
+    number: "05",
     title: "Engineering & Administrative Control Design",
     description:
-      "Prioritised hierarchy-of-control recommendations encompassing radiant heat shielding, local spot cooling, furnace hearth baffling, physiological acclimatisation protocols, and structured hydration stations.",
+      "Prioritised hierarchy-of-control recommendations encompassing radiant heat shielding, spot cooling, draught/evaporator baffling, heated cabins, physiological acclimatisation, and structured hydration or warm-up stations.",
+  },
+  {
+    number: "06",
+    title: "Peripheral & Physiological Strain Assessment",
+    description:
+      "Non-invasive physiological telemetry evaluating personal cold and heat strain (e.g. skin/extremity temperature and cardiac recovery) when complex task dynamics or PPE negate environmental indices.",
   },
 ];
 
@@ -123,8 +147,9 @@ export default function PhysicalAgentsThermalPage() {
               Occupational Hygiene • Physical Agents
             </p>
             <h1 className="font-serif text-4xl font-normal tracking-tight text-stone-100 sm:text-5xl lg:leading-[1.12]">
-              Thermal Risk &amp;{" "}
-              <span className="text-[#d4af37]">Heat Stress</span> Assessment
+              Thermal Risk,{" "}
+              <span className="text-[#d4af37]">Heat &amp; Cold Stress</span>{" "}
+              Assessment
             </h1>
 
             <p className="mt-6 text-base leading-relaxed text-stone-300 sm:text-lg">
@@ -136,9 +161,19 @@ export default function PhysicalAgentsThermalPage() {
               limits.
             </p>
 
+            <p className="mt-4 text-sm leading-relaxed text-stone-300 sm:text-base">
+              Conversely, workers in industrial sub-zero cold stores, blast
+              chillers, refrigerated production facilities, and exposed outdoor
+              environments are vulnerable to the severe physiological impacts of
+              cold stress. Low ambient air temperatures combined with
+              convective wind chill from evaporator fan arrays will degrade
+              manual dexterity, rapidly deplete body heat, and dramatically
+              increase the risks of hypothermia or frostbite.
+            </p>
+
             <p className="mt-4 text-sm leading-relaxed text-stone-400 sm:text-base">
-              Waterledge Consultancy delivers quantitative thermal risk
-              surveys engineered around{" "}
+              Waterledge Consultancy delivers quantitative thermal risk surveys
+              engineered around{" "}
               <strong className="font-medium text-stone-200">
                 BS EN ISO 7243 (WBGT)
               </strong>
@@ -146,17 +181,21 @@ export default function PhysicalAgentsThermalPage() {
               <strong className="font-medium text-stone-200">
                 BS EN ISO 7933 (Predicted Heat Strain)
               </strong>
+              ,{" "}
+              <strong className="font-medium text-stone-200">
+                BS EN ISO 11079 (Required Clothing Insulation - IREQ)
+              </strong>
               , and{" "}
               <strong className="font-medium text-stone-200">
-                ACGIH TLVs
+                BS EN ISO 15743 (Cold Workplace Risk Assessment)
               </strong>
-              . We separate environmental heat stress from individual
-              physiological strain—giving dutyholders clear, auditable
-              engineering controls and work-rest regimes.
+              . We separate environmental stress from individual physiological
+              strain—giving dutyholders clear, auditable engineering controls,
+              PPE evaluation, and robust work-rest or warm-up regimes.
             </p>
 
             {/* Key Parameter Callout Strip */}
-            <div className="mt-8 grid grid-cols-1 gap-6 border-y border-stone-800/90 py-5 sm:grid-cols-3">
+            <div className="mt-8 grid grid-cols-1 gap-6 border-y border-stone-800/90 py-5 sm:grid-cols-2 lg:grid-cols-4">
               <div>
                 <div className="font-mono text-xs uppercase tracking-widest text-[#d4af37]">
                   ISO 7243
@@ -170,16 +209,16 @@ export default function PhysicalAgentsThermalPage() {
               </div>
               <div className="sm:border-l sm:border-stone-800/80 sm:pl-6">
                 <div className="font-mono text-xs uppercase tracking-widest text-[#d4af37]">
-                  ISO 9886
+                  ISO 11079
                 </div>
                 <div className="mt-1 text-sm font-medium text-stone-200">
-                  Strain Telemetry
+                  IREQ &amp; DLE Cold Evaluation
                 </div>
                 <div className="text-xs text-stone-400">
-                  Non-invasive physiological
+                  Insulation, wind chill, &amp; exposure limits
                 </div>
               </div>
-              <div className="sm:border-l sm:border-stone-800/80 sm:pl-6">
+              <div className="lg:border-l lg:border-stone-800/80 lg:pl-6">
                 <div className="font-mono text-xs uppercase tracking-widest text-[#d4af37]">
                   ISO 7933
                 </div>
@@ -188,6 +227,17 @@ export default function PhysicalAgentsThermalPage() {
                 </div>
                 <div className="text-xs text-stone-400">
                   Sweat rate &amp; duration
+                </div>
+              </div>
+              <div className="sm:border-l sm:border-stone-800/80 sm:pl-6">
+                <div className="font-mono text-xs uppercase tracking-widest text-[#d4af37]">
+                  ISO 9886
+                </div>
+                <div className="mt-1 text-sm font-medium text-stone-200">
+                  Strain Telemetry
+                </div>
+                <div className="text-xs text-stone-400">
+                  Peripheral skin, heart rate &amp; tympanic
                 </div>
               </div>
             </div>
@@ -209,10 +259,11 @@ export default function PhysicalAgentsThermalPage() {
             </div>
           </div>
 
-          {/* Full-Width CAD Blueprint Graphic Below */}
-          <div className="w-full">
+          {/* Stacked Full-Width Visual Appraisals */}
+          <div className="flex flex-col gap-8 w-full">
+            {/* Fig 1.0 — Heat Stress Blueprint */}
             <div className="overflow-hidden rounded-sm border border-stone-800 bg-[#0c0d0e] p-3 shadow-2xl sm:p-4">
-              <div className="relative aspect-square w-full overflow-hidden rounded-sm border border-stone-800/60 bg-[#0c0d0e]">
+              <div className="relative aspect-square w-full max-h-[85vh] overflow-hidden rounded-sm border border-stone-800/60 bg-[#0c0d0e]">
                 <Image
                   src="/images/Thermal-v3.webp"
                   alt="Occupational Hygiene Thermal Risk and WBGT Heat Stress Measurement Blueprint (BS EN ISO 7243 and ISO 9886)"
@@ -225,7 +276,44 @@ export default function PhysicalAgentsThermalPage() {
               <div className="mt-3 flex flex-wrap items-center justify-between gap-2 px-2 py-1 text-xs tracking-wider uppercase text-stone-400">
                 <span>Fig 1.0 — Radiant Furnace &amp; WBGT Sensor Array</span>
                 <span className="font-mono text-[#d4af37]">
-                  BS EN ISO 7243 / ISO 9886
+                  BS EN ISO 7243 / ISO 9886 (HEAT)
+                </span>
+              </div>
+            </div>
+
+            {/* Sub-Zero Cold stress context paragraph */}
+            <div className="w-full border-t border-stone-800/80 pt-6">
+              <h2 className="font-serif text-2xl font-normal tracking-tight text-stone-100 sm:text-3xl">
+                Environmental &amp; PPE Assessment in{" "}
+                <span className="text-[#d4af37]">Sub-Zero Cold Stores</span>
+              </h2>
+              <p className="mt-4 text-sm leading-relaxed text-stone-400 sm:text-base">
+                Measuring sub-zero occupational environments (such as the -20°C
+                to -40°C conditions highlighted in Fig 2.0 below) requires
+                highly specialized, robust sensors to properly evaluate risks.
+                Assessing a cold storage workforce demands tracing dry-bulb air
+                temperatures, high-velocity convective fan patterns, relative
+                humidity, and metabolic workloads. By comparing environmental
+                forces against the Thermal Insulation Required index (IREQ) alongside the Duration Limited Exposure (DLE) standards, we can prevent cold strain, ensure appropriate glove and clothing selection, and safeguard workers from severe temperature drops.
+              </p>
+            </div>
+
+            {/* Fig 2.0 — Cold Stress Blueprint */}
+            <div className="overflow-hidden rounded-sm border border-stone-800 bg-[#0c0d0e] p-3 shadow-2xl sm:p-4">
+              <div className="relative aspect-square w-full max-h-[85vh] overflow-hidden rounded-sm border border-stone-800/60 bg-[#0c0d0e]">
+                <Image
+                  src="/images/Thermal-v4.webp"
+                  alt="Occupational Hygiene Cold Risk Assessment and IREQ Cold Stress Blueprint (BS EN ISO 11079 and ISO 15743)"
+                  fill
+                  priority
+                  sizes="100vw"
+                  className="object-contain"
+                />
+              </div>
+              <div className="mt-3 flex flex-wrap items-center justify-between gap-2 px-2 py-1 text-xs tracking-wider uppercase text-stone-400">
+                <span>Fig 2.0 — Industrial Sub-Zero Cold Room &amp; Environmental Arrays</span>
+                <span className="font-mono text-[#d4af37]">
+                  BS EN ISO 11079 / ISO 15743 (COLD)
                 </span>
               </div>
             </div>
@@ -242,56 +330,55 @@ export default function PhysicalAgentsThermalPage() {
                 Empirical &amp; Analytical Indices
               </p>
               <h2 className="mt-2 font-serif text-2xl text-stone-100 sm:text-3xl">
-                WBGT Index Formulation &amp; Non-Invasive Strain Criteria
+                Assessment Formulations &amp; Strain Criteria
               </h2>
             </div>
             <p className="max-w-md text-xs leading-relaxed text-stone-400">
-              Weighted combinations of natural wet bulb (Tnwb), black globe
-              (Tg), and dry bulb air temperature (Ta) adjusted for clothing
-              ensembles and metabolic rate.
+              Analysis combining natural wet bulb (Tnwb), black globe (Tg), dry
+              bulb air (Ta), convective Wind Chill (WCI) and insulated clothing factors to evaluate extreme work stress.
             </p>
           </div>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             <div className="rounded-sm border border-stone-800 bg-[#0c0d0e] p-6">
               <div className="text-xs font-semibold tracking-[0.18em] uppercase text-[#d4af37]">
-                Indoor / Radiant (No Solar Load)
+                Heat Stress (No Solar Load)
               </div>
               <div className="mt-3 font-mono text-lg font-semibold text-stone-100">
                 WBGT = 0.7 T<sub>nwb</sub> + 0.3 T<sub>g</sub>
               </div>
               <p className="mt-3 text-xs leading-relaxed text-stone-400">
-                Applied in furnace halls, casting bays, kilns, and internal
-                manufacturing plant where radiant sources dominate without
-                direct solar radiation.
+                Applied in furnace halls, casting bays, and internal manufacturing
+                plant where radiant heat is high but direct solar loads are not
+                present.
               </p>
             </div>
 
             <div className="rounded-sm border border-stone-800 bg-[#0c0d0e] p-6">
               <div className="text-xs font-semibold tracking-[0.18em] uppercase text-[#d4af37]">
-                Outdoor / Direct Solar Load
+                IREQ Cold &amp; Local Cooling
               </div>
               <div className="mt-3 font-mono text-lg font-semibold text-stone-100">
-                WBGT = 0.7 T<sub>nwb</sub> + 0.2 T<sub>g</sub> + 0.1 T<sub>a</sub>
+                IREQ<sub>min / neutral</sub> &amp; DLE
               </div>
               <p className="mt-3 text-xs leading-relaxed text-stone-400">
-                Applied to civil engineering, solar-exposed yard operations, and
-                roof-level plant maintenance incorporating dry bulb ambient air
-                weighting.
+                Determines required clothing insulation (clo) and maximum
+                Duration Limited Exposure (DLE) for working inside sub-zero or
+                refrigerated areas.
               </p>
             </div>
 
             <div className="rounded-sm border border-stone-800 bg-[#0c0d0e] p-6">
               <div className="text-xs font-semibold tracking-[0.18em] uppercase text-[#d4af37]">
-                Personal Heat Strain (ISO 9886)
+                Personal Physiological Strain
               </div>
               <div className="mt-3 font-mono text-lg font-semibold text-stone-100">
-                Tympanic • Heart Rate • 4-Pt Skin
+                Tympanic • Heart Rate • Skin T
               </div>
               <p className="mt-3 text-xs leading-relaxed text-stone-400">
-                Non-invasive personal physiological monitoring where
-                encapsulating or reflective PPE invalidates standard ambient
-                WBGT assumptions.
+                Personal monitoring arrays (ISO 9886) track key core temperature
+                trends, recovery times, and peripheral hand/glove skin temps in
+                intense sub-zero and furnace work.
               </p>
             </div>
           </div>
@@ -310,12 +397,12 @@ export default function PhysicalAgentsThermalPage() {
           <p className="mt-3 text-sm leading-relaxed text-stone-400">
             Under the Health and Safety at Work etc. Act 1974 and the Management
             of Health and Safety at Work Regulations 1999, employers must assess
-            and control foreseeable thermal risks in accordance with British and
-            International ergonomic standards.
+            and control foreseeable thermal hazards (both extreme heat and extreme
+            cold) in accordance with recognized British and International standards.
           </p>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {coreStandards.map((item) => (
             <div
               key={item.code}
@@ -386,10 +473,10 @@ export default function PhysicalAgentsThermalPage() {
                 Explore Dedicated Noise &amp; Vibration Assessments
               </h3>
               <p className="mt-2 max-w-2xl text-sm text-stone-400">
-                Alongside thermal environment surveys, Waterledge Consultancy
-                provides Class 1 octave-band workplace noise assessments (BS EN
-                ISO 9612) and triaxial Hand-Arm &amp; Whole-Body Vibration
-                exposure profiling (BS EN ISO 5349 / ISO 2631).
+                Alongside comprehensive thermal and cold-store assessments, Waterledge
+                Consultancy provides Class 1 octave-band workplace noise surveys
+                (BS EN ISO 9612) and triaxial Hand-Arm &amp; Whole-Body Vibration
+                monitoring (BS EN ISO 5349 / ISO 2631).
               </p>
             </div>
 
