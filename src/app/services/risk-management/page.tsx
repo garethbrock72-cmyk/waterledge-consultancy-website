@@ -113,17 +113,17 @@ const isoProcessAlignment = [
 
 const integrationPillars = [
   {
-    tag: "BS 31100 • Specialist Instance",
+    tag: "Specialist Instance",
     title: "Embedded, Not Siloed",
     body: "Structured as a dedicated operational instance of your corporate risk process—connecting shop-floor exposure control directly to project change management, ISO 45001/9001 systems, and board oversight.",
   },
   {
-    tag: "BS ISO 31000 • Clause 4 Principles",
+    tag: "Risk Management Principles",
     title: "Best Available Information",
     body: "Grounded in empirical measurement, documented assumptions, and human factors rather than generic risk matrices—protecting workforce health while creating defensible organisational value.",
   },
   {
-    tag: "ISO/TR 31004 • Governance & Assurance",
+    tag: "Governance & Assurance",
     title: "Clear Ownership & Residual Risk",
     body: "Assigns explicit risk and control ownership, tracks lead and lag performance indicators, and formally documents retained residual risk so leadership decisions remain transparent and auditable.",
   },
@@ -292,19 +292,14 @@ export default function RiskManagementPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-xs font-semibold tracking-[0.22em] text-[#d4af37] uppercase">
-              Enterprise System Integration • BS ISO 31000:2018
+              Enterprise System Integration
             </p>
             <h2 className="mt-2 font-serif text-3xl font-semibold text-stone-100 sm:text-4xl">
               Aligning Hygiene Practice with Corporate Risk Governance
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-stone-400 sm:text-base">
-              Occupational hygiene is most effective when integrated into your wider management
-              framework rather than operated as an isolated compliance silo. Our methodology aligns
-              with <span className="text-stone-200">BS ISO 31000:2018</span>, supported by{" "}
-              <span className="text-stone-200">BS 31100</span> and{" "}
-              <span className="text-stone-200">PD ISO/TR 31004</span> implementation guidance, so
-              technical exposure data feeds seamlessly into client risk registers and executive
-              decision-making.
+              Occupational hygiene is most effective when integrated into the wider business management framework rather than operated as an isolated compliance silo. 
+              Technical exposure data generated from site work shall be presented so that it feeds seamlessly into client risk registers and executive decision-making.
             </p>
           </div>
 
@@ -332,12 +327,10 @@ export default function RiskManagementPage() {
               <div className="flex items-center gap-2.5">
                 <span className="h-2 w-2 rounded-full bg-[#d4af37]" />
                 <span className="text-xs font-semibold tracking-[0.18em] text-stone-200 uppercase">
-                  BS ISO 31000:2018 Process Integration Crosswalk
+                  Process Integration Crosswalk
                 </span>
               </div>
-              <span className="font-mono text-[11px] tracking-wider text-stone-400">
-                ISO 31000 • BS 31100 • ISO/TR 31004 • ISO 45001
-              </span>
+             
             </div>
 
             <div className="overflow-x-auto">
