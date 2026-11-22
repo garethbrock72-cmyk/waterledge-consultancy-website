@@ -80,31 +80,26 @@ const governancePillars = [
 
 const isoProcessAlignment = [
   {
-    clause: "Clause 6.3",
     isoStage: "Scope, Context & Criteria",
     hygieneApplication:
       "Defining Similar Exposure Groups (SEGs), operational context, and statutory risk criteria (EH40 WELs, Noise/Vibration EAVs & ELVs, ALARP thresholds) that supersede pure cost-benefit trade-offs.",
   },
   {
-    clause: "Clause 6.4",
     isoStage: "Risk Assessment",
     hygieneApplication:
       "Hazard identification, qualitative/quantitative exposure analysis (BS EN 689, ISO 9612, ISO 5349), and evaluation of inherent vs. residual risk with explicit statistical confidence.",
   },
   {
-    clause: "Clause 6.5",
     isoStage: "Risk Treatment",
     hygieneApplication:
       "Applying the 5-tier Hierarchy of Control to modify risk at source—paired with structured treatment plans, named control owners, and checks against unintended secondary hazards.",
   },
   {
-    clause: "Clause 6.6",
     isoStage: "Monitoring & Review",
     hygieneApplication:
       "Distinguishing routine monitoring (air/noise sampling, LEV TExT, lead indicators) from periodic review of control validity as processes, materials, or legislation change.",
   },
   {
-    clause: "Clauses 6.2 & 6.7",
     isoStage: "Consultation, Recording & Reporting",
     hygieneApplication:
       "Workforce consultation to capture human and cultural factors, backed by auditable risk registers and board-ready assurance reporting integrated into client management systems.",
@@ -321,7 +316,7 @@ export default function RiskManagementPage() {
             ))}
           </div>
 
-          {/* Compact ISO 31000 Process Crosswalk Table */}
+          {/* Compact Process Crosswalk Table */}
           <div className="mt-12 overflow-hidden rounded-xl border border-stone-800/90 bg-[#0f1012]">
             <div className="flex flex-wrap items-center justify-between gap-2 border-b border-stone-800/80 px-6 py-4">
               <div className="flex items-center gap-2.5">
@@ -330,15 +325,15 @@ export default function RiskManagementPage() {
                   Process Integration Crosswalk
                 </span>
               </div>
-             
             </div>
 
             <div className="overflow-x-auto">
               <table className="w-full text-left text-sm">
                 <thead className="border-b border-stone-800/80 bg-[#0c0d0e]/70 text-[11px] font-mono tracking-[0.16em] text-stone-400 uppercase">
                   <tr>
-                    <th className="px-6 py-3.5 font-medium whitespace-nowrap">ISO 31000 Ref</th>
-                    <th className="px-6 py-3.5 font-medium whitespace-nowrap">Process Element</th>
+                    <th className="w-64 px-6 py-3.5 font-medium whitespace-nowrap">
+                      Process Element
+                    </th>
                     <th className="px-6 py-3.5 font-medium">
                       Occupational Hygiene Integration &amp; Client Deliverable
                     </th>
@@ -347,13 +342,10 @@ export default function RiskManagementPage() {
                 <tbody className="divide-y divide-stone-800/70">
                   {isoProcessAlignment.map((row) => (
                     <tr
-                      key={row.clause}
+                      key={row.isoStage}
                       className="transition-colors hover:bg-stone-900/40"
                     >
-                      <td className="px-6 py-4 align-top font-mono text-xs font-semibold whitespace-nowrap text-[#d4af37]">
-                        {row.clause}
-                      </td>
-                      <td className="px-6 py-4 align-top font-medium whitespace-nowrap text-stone-200">
+                      <td className="px-6 py-4 align-top font-semibold whitespace-nowrap text-[#d4af37]">
                         {row.isoStage}
                       </td>
                       <td className="px-6 py-4 align-top text-xs leading-relaxed text-stone-400 sm:text-sm">
