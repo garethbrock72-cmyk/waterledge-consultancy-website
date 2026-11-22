@@ -42,7 +42,7 @@ export default function PersonalSamplingPage() {
         </div>
       </header>
 
-      <main className="relative z-10 max-w-6xl mx-auto px-6 py-20 space-y-20">
+      <main className="relative z-10 max-w-6xl mx-auto px-6 py-20 space-y-16 animate-fade-in">
         {/* Hero Header with Heritage-style Notice Badge */}
         <section className="space-y-6 border-b border-stone-800/80 pb-14">
           {/* Heritage-style Notice Badge */}
@@ -55,12 +55,12 @@ export default function PersonalSamplingPage() {
             Occupational Hygiene Personal Sampling
           </h1>
 
-          <p className="text-lg sm:text-xl text-stone-300 font-serif italic max-w-3xl leading-relaxed font-light">
+          <p className="text-lg sm:text-xl text-stone-300 font-serif italic max-w-4xl leading-relaxed font-light">
             Defensible, standards-led personal exposure monitoring across chemical,
             physical, and biological agents.
           </p>
 
-          <p className="text-sm sm:text-base text-stone-400 max-w-3xl leading-relaxed font-light">
+          <p className="text-sm sm:text-base text-stone-400 max-w-4xl leading-relaxed font-light">
             Quantifying real-world operator exposure within the breathing and hearing
             zones—alongside systemic biological uptake—to verify engineering and RPE
             controls against HSE EH40 Workplace Exposure Limits (WELs), Biological
@@ -68,89 +68,94 @@ export default function PersonalSamplingPage() {
           </p>
         </section>
 
-        {/* Main Technical Diagram + Core Overview */}
-        <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-          <div className="lg:col-span-7 bg-[#0f1012] border border-stone-800/80 p-4 sm:p-6">
-            <div className="relative w-full aspect-square overflow-hidden border border-stone-800/60">
-              <Image
-                src="/images/personal-sampling-assessment.webp"
-                alt="Occupational Hygiene Personal Sampling Diagram showing IOM inhalable dust cassette in breathing zone, ISO 13137 constant flow pump, and shoulder-mounted personal noise dosimeter"
-                fill
-                className="object-contain"
-                priority
-              />
+        {/* Above Diagram supporting copy */}
+        <section className="space-y-4 max-w-4xl">
+          <div className="space-y-2">
+            <span className="text-[11px] tracking-[0.25em] uppercase text-[#d4af37] font-mono">
+              Exposure Quantification
+            </span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-light text-stone-100">
+              Why Personal Sampling Matters
+            </h2>
+          </div>
+
+          <p className="text-stone-300 text-sm sm:text-base leading-relaxed font-light">
+            Static background measurements rarely reflect true operator risk.
+            Personal sampling places calibrated collection media or acoustic
+            transducers directly on the worker across representative task cycles or
+            full 8-hour Time-Weighted Reference Periods (TWRP), capturing spatial and
+            task-driven exposure peaks. 
+          </p>
+          <p className="text-stone-400 text-sm sm:text-base leading-relaxed font-light">
+            Simultaneous monitoring (such as that illustrated below in Fig 1.0) ensures complete, dual-hazard evaluation by aligning direct breathing-zone air draw with shoulder-level acoustic telemetry, directly matching worker patterns over extended work cycles.
+          </p>
+        </section>
+
+        {/* Full-Width CAD Technical Diagram */}
+        <section className="overflow-hidden rounded-sm border border-stone-800 bg-[#0c0d0e] p-3 shadow-2xl sm:p-5">
+          <div className="relative w-full">
+            <Image
+              src="/images/personal-sampling-assessment.webp"
+              alt="Occupational Hygiene Personal Sampling Diagram showing IOM inhalable dust cassette in breathing zone, ISO 13137 constant flow pump, and shoulder-mounted personal noise dosimeter"
+              width={2048}
+              height={2048}
+              priority
+              className="w-full h-auto object-contain rounded-sm border border-stone-800/60"
+            />
+          </div>
+          <div className="mt-4 flex flex-wrap items-center justify-between gap-2 px-2 py-1 text-xs tracking-wider uppercase text-stone-400">
+            <span>Fig 1.0 — Simultaneous Personal Air Sampling &amp; Shoulder noise dosimeters</span>
+            <span className="font-mono text-[#d4af37]">
+              BS EN 689 / ISO 13137 &amp; IEC 61252 (DUAL SAMPLING)
+            </span>
+          </div>
+        </section>
+
+        {/* Below Diagram Grid of Core Modules */}
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+          <div className="p-6 bg-[#0f1012] border border-stone-800/80 space-y-3">
+            <div className="text-xs font-mono tracking-widest text-[#d4af37] uppercase">
+              01 // COSHH Regulation 10
             </div>
-            <p className="mt-4 text-xs text-stone-400 font-light tracking-wide text-center">
-              Simultaneous personal air sampling (BS EN 689 / ISO 13137) and personal
-              noise dosimetry (IEC 61252 / BS EN ISO 9612) configured within the
-              operator&apos;s breathing and hearing zones.
+            <h3 className="text-xl font-serif font-light text-stone-100">
+              Airborne Contaminant Sampling
+            </h3>
+            <p className="text-stone-400 text-xs sm:text-sm leading-relaxed font-light">
+              Personal sampling within the 300 mm hemispherical breathing zone in
+              accordance with <strong className="text-stone-200 font-medium font-sans">BS EN 689:2018</strong> and{" "}
+              <strong className="text-stone-200 font-medium font-sans">HSG 173</strong>. Utilising ISO 13137
+              gravimetric pumps, IOM inhalable heads, cyclone respirable samplers, and
+              sorbent tubes compared against EH40 WELs.
             </p>
           </div>
 
-          <div className="lg:col-span-5 space-y-6">
-            <div className="space-y-2">
-              <span className="text-[11px] tracking-[0.25em] uppercase text-[#d4af37] font-mono">
-                Exposure Quantification
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-serif font-light text-stone-100">
-                Why Personal Sampling Matters
-              </h2>
+          <div className="p-6 bg-[#0f1012] border border-stone-800/80 space-y-3">
+            <div className="text-xs font-mono tracking-widest text-[#d4af37] uppercase">
+              02 // CONAWR 2005
             </div>
-
-            <p className="text-stone-400 text-sm leading-relaxed font-light">
-              Static background measurements rarely reflect true operator risk.
-              Personal sampling places calibrated collection media or acoustic
-              transducers directly on the worker across representative task cycles or
-              full 8-hour Time-Weighted Reference Periods (TWRP), capturing spatial and
-              task-driven exposure peaks.
+            <h3 className="text-xl font-serif font-light text-stone-100">
+              Personal Noise Dosimetry
+            </h3>
+            <p className="text-stone-400 text-xs sm:text-sm leading-relaxed font-light">
+              Cable-free shoulder-mounted dosimeters (IEC 61252 / BS EN ISO 9612)
+              positioned 100–300 mm from the ear canal for mobile or peripatetic
+              workers, quantifying daily noise exposure (<strong className="text-stone-200 font-medium font-sans">L_EP,d</strong>) and peak
+              sound pressure (<strong className="text-stone-200 font-medium font-sans">L_Cpeak</strong>).
             </p>
+          </div>
 
-            <div className="space-y-4">
-              <div className="p-6 bg-[#0f1012] border border-stone-800/80 space-y-2">
-                <div className="text-xs font-mono tracking-widest text-[#d4af37] uppercase">
-                  01 // COSHH Regulation 10
-                </div>
-                <h3 className="text-lg font-serif font-light text-stone-100">
-                  Airborne Contaminant Sampling
-                </h3>
-                <p className="text-stone-400 text-xs sm:text-sm leading-relaxed font-light">
-                  Personal sampling within the 300 mm hemispherical breathing zone in
-                  accordance with <strong className="text-stone-200 font-medium">BS EN 689:2018</strong> and{" "}
-                  <strong className="text-stone-200 font-medium">HSG 173</strong>. Utilising ISO 13137
-                  gravimetric pumps, IOM inhalable heads, cyclone respirable samplers, and
-                  sorbent tubes compared against EH40 WELs.
-                </p>
-              </div>
-
-              <div className="p-6 bg-[#0f1012] border border-stone-800/80 space-y-2">
-                <div className="text-xs font-mono tracking-widest text-[#d4af37] uppercase">
-                  02 // CONAWR 2005
-                </div>
-                <h3 className="text-lg font-serif font-light text-stone-100">
-                  Personal Noise Dosimetry
-                </h3>
-                <p className="text-stone-400 text-xs sm:text-sm leading-relaxed font-light">
-                  Cable-free shoulder-mounted dosimeters (IEC 61252 / BS EN ISO 9612)
-                  positioned 100–300 mm from the ear canal for mobile or peripatetic
-                  workers, quantifying daily noise exposure (<strong className="text-stone-200 font-medium">L_EP,d</strong>) and peak
-                  sound pressure (<strong className="text-stone-200 font-medium">L_Cpeak</strong>).
-                </p>
-              </div>
-
-              <div className="p-6 bg-[#0f1012] border border-stone-800/80 space-y-2">
-                <div className="text-xs font-mono tracking-widest text-[#d4af37] uppercase">
-                  03 // EH40 BMGVs &amp; HSG 167
-                </div>
-                <h3 className="text-lg font-serif font-light text-stone-100">
-                  Biological Monitoring &amp; Urinalysis
-                </h3>
-                <p className="text-stone-400 text-xs sm:text-sm leading-relaxed font-light">
-                  Evaluates total systemic uptake across all routes of entry (inhalation,
-                  dermal absorption, ingestion) and verifies the real-world efficacy of
-                  air-fed RPE and chemical gloves.
-                </p>
-              </div>
+          <div className="p-6 bg-[#0f1012] border border-stone-800/80 space-y-3">
+            <div className="text-xs font-mono tracking-widest text-[#d4af37] uppercase">
+              03 // EH40 BMGVs &amp; HSG 167
             </div>
+            <h3 className="text-xl font-serif font-light text-stone-100">
+              Biological Monitoring
+            </h3>
+            <p className="text-stone-400 text-xs sm:text-sm leading-relaxed font-light">
+              Evaluates total systemic uptake across all routes of entry (inhalation,
+              dermal absorption, ingestion) and verifies the real-world efficacy of
+              air-fed RPE and chemical gloves to confirm comprehensive barriers.
+            </p>
           </div>
         </section>
 
@@ -182,22 +187,22 @@ export default function PersonalSamplingPage() {
               <p className="text-stone-400 text-xs sm:text-sm leading-relaxed font-light">
                 Non-invasive post-shift urine sampling analysed by UKAS-accredited
                 laboratories to measure chemical metabolites against{" "}
-                <strong className="text-stone-200 font-medium">EH40 Biological Monitoring Guidance Values</strong> and{" "}
-                <strong className="text-stone-200 font-medium">HSG 167</strong>:
+                <strong className="text-stone-200 font-medium font-sans">EH40 Biological Monitoring Guidance Values</strong> and{" "}
+                <strong className="text-stone-200 font-medium font-sans">HSG 167</strong>:
               </p>
               <ul className="text-stone-400 text-xs space-y-2.5 font-light pt-2 border-t border-stone-800/80">
                 <li>
-                  <strong className="text-stone-200 font-medium">Isocyanates (HDI, TDI, MDI):</strong>{" "}
+                  <strong className="text-stone-200 font-medium font-sans">Isocyanates (HDI, TDI, MDI):</strong>{" "}
                   Post-shift urinalysis for urinary diamines (BMGV: 1 &mu;mol/mol
                   creatinine) in two-pack spray painting, PU foam moulding, and
                   structural adhesive application.
                 </li>
                 <li>
-                  <strong className="text-stone-200 font-medium">PAHs &amp; Heavy Metals:</strong>{" "}
+                  <strong className="text-stone-200 font-medium font-sans">PAHs &amp; Heavy Metals:</strong>{" "}
                   Urinary 1-hydroxypyrene, chromium, cobalt, and cadmium screening.
                 </li>
                 <li>
-                  <strong className="text-stone-200 font-medium">Organic Solvents:</strong>{" "}
+                  <strong className="text-stone-200 font-medium font-sans">Organic Solvents:</strong>{" "}
                   Styrene (mandelic acid), xylene (methylhippuric acid), and CO breath
                   analysis.
                 </li>
@@ -218,17 +223,17 @@ export default function PersonalSamplingPage() {
               </p>
               <ul className="text-stone-400 text-xs space-y-2.5 font-light pt-2 border-t border-stone-800/80">
                 <li>
-                  <strong className="text-stone-200 font-medium">Patch &amp; Inner-Glove Sampling:</strong>{" "}
+                  <strong className="text-stone-200 font-medium font-sans">Patch &amp; Inner-Glove Sampling:</strong>{" "}
                   Absorbent interception patches and inner-glove extraction measuring
                   permeation inside chemical gauntlets.
                 </li>
                 <li>
-                  <strong className="text-stone-200 font-medium">Template Surface Wipes:</strong>{" "}
+                  <strong className="text-stone-200 font-medium font-sans">Template Surface Wipes:</strong>{" "}
                   Standardised swabbing for toxic metals (lead, nickel, Cr(VI)),
                   isocyanates, and sensitising dusts.
                 </li>
                 <li>
-                  <strong className="text-stone-200 font-medium">UV Fluorescence Tracing:</strong>{" "}
+                  <strong className="text-stone-200 font-medium font-sans">UV Fluorescence Tracing:</strong>{" "}
                   Visualisation of dermal contact transfer during PPE doffing.
                 </li>
               </ul>
@@ -244,16 +249,16 @@ export default function PersonalSamplingPage() {
               </h3>
               <p className="text-stone-400 text-xs sm:text-sm leading-relaxed font-light">
                 Triaxial accelerometer measurement at the tool grip or seat interface to
-                quantify daily personal vibration exposure (<strong className="text-stone-200 font-medium">A(8)</strong>):
+                quantify daily personal vibration exposure (<strong className="text-stone-200 font-medium font-sans">A(8)</strong>):
               </p>
               <ul className="text-stone-400 text-xs space-y-2.5 font-light pt-2 border-t border-stone-800/80">
                 <li>
-                  <strong className="text-stone-200 font-medium">BS EN ISO 5349 (HAV):</strong>{" "}
+                  <strong className="text-stone-200 font-medium font-sans">BS EN ISO 5349 (HAV):</strong>{" "}
                   Handle-mounted triaxial transducers calculating vector sum acceleration
                   and exposure points against EAV (2.5 m/s&sup2;) and ELV (5.0 m/s&sup2;).
                 </li>
                 <li>
-                  <strong className="text-stone-200 font-medium">BS EN ISO 2631-1 (WBV):</strong>{" "}
+                  <strong className="text-stone-200 font-medium font-sans">BS EN ISO 2631-1 (WBV):</strong>{" "}
                   Seat-pad triaxial monitoring for industrial plant and logistics fleets.
                 </li>
               </ul>
